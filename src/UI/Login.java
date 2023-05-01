@@ -56,7 +56,7 @@ public class Login extends javax.swing.JFrame {
 
         ClosePage_1.setBackground(new java.awt.Color(255, 255, 255));
         ClosePage_1.setForeground(new java.awt.Color(255, 255, 255));
-        ClosePage_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancelar (1).png"))); // NOI18N
+        ClosePage_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eliminar.png"))); // NOI18N
         ClosePage_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ClosePage_1MouseClicked(evt);
