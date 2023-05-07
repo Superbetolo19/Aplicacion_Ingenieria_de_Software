@@ -31,7 +31,6 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panel_menu = new javax.swing.JPanel();
         panelVenta = new javax.swing.JPanel();
         panelLista = new javax.swing.JPanel();
         listaVacia = new javax.swing.JLabel();
@@ -65,24 +64,11 @@ public class Home extends javax.swing.JFrame {
         bt_BuscarProducto = new javax.swing.JPanel();
         icon_BuscarProducto = new javax.swing.JLabel();
         Lab_BuscarProducto = new javax.swing.JLabel();
+        panel_menu = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
         setMinimumSize(new java.awt.Dimension(822, 419));
-
-        panel_menu.setBackground(new java.awt.Color(51, 51, 51));
-        panel_menu.setMinimumSize(new java.awt.Dimension(300, 500));
-
-        javax.swing.GroupLayout panel_menuLayout = new javax.swing.GroupLayout(panel_menu);
-        panel_menu.setLayout(panel_menuLayout);
-        panel_menuLayout.setHorizontalGroup(
-            panel_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-        panel_menuLayout.setVerticalGroup(
-            panel_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-        );
 
         panelVenta.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -482,6 +468,20 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(panelLista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PanelProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+        );
+
+        panel_menu.setBackground(new java.awt.Color(51, 51, 51));
+        panel_menu.setMinimumSize(new java.awt.Dimension(300, 500));
+
+        javax.swing.GroupLayout panel_menuLayout = new javax.swing.GroupLayout(panel_menu);
+        panel_menu.setLayout(panel_menuLayout);
+        panel_menuLayout.setHorizontalGroup(
+            panel_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+        panel_menuLayout.setVerticalGroup(
+            panel_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 500, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
