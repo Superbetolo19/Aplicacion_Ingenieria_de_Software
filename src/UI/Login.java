@@ -15,12 +15,15 @@ public class Login extends javax.swing.JFrame {
 
     private String nombre;
     private String correo;
+    private Home panelHome;
     /**
      * Creates new form Login
      */
     public Login() {
         nombre = "";
         correo = "";
+        panelHome = new Home();
+        panelHome.setVisible(false);
         
         initComponents();
         panel_infoEncargado.setVisible(false);
@@ -58,7 +61,6 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(0, 0));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(800, 500));
         setResizable(false);
 
         panel_Opciones.setBackground(new java.awt.Color(51, 51, 51));

@@ -18,6 +18,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        this.setLocationRelativeTo(null);
         //panelVenta.setVisible(false);
         panel_menu.setVisible(false);
     }
@@ -55,7 +56,7 @@ public class Home extends javax.swing.JFrame {
         PanelProductos = new javax.swing.JPanel();
         panelProducto = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        tf_BuscarProducto = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         bt_RetornoVategoria = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -300,24 +301,30 @@ public class Home extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
 
-        jTextField1.setBackground(new java.awt.Color(51, 51, 51));
-        jTextField1.setText("jTextField1");
-        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        tf_BuscarProducto.setBackground(new java.awt.Color(51, 51, 51));
+        tf_BuscarProducto.setForeground(new java.awt.Color(255, 255, 255));
+        tf_BuscarProducto.setToolTipText("");
+        tf_BuscarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        tf_BuscarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_BuscarProductoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator6)
+            .addComponent(jSeparator6, javax.swing.GroupLayout.DEFAULT_SIZE, 538, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(291, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(tf_BuscarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
+                .addComponent(tf_BuscarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -614,17 +621,23 @@ public class Home extends javax.swing.JFrame {
     private void bt_MenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_MenuMouseClicked
         // TODO add your handling code here:
         panel_menu.setVisible(true);
+        //bt_Menu.setVisible(false);
     }//GEN-LAST:event_bt_MenuMouseClicked
 
     private void bt_cerrarMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_cerrarMenuMouseClicked
         // TODO add your handling code here:
         panel_menu.setVisible(false);
+        //bt_Menu.setEnabled(true);
     }//GEN-LAST:event_bt_cerrarMenuMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void tf_BuscarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_BuscarProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_BuscarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -687,7 +700,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel labTotal;
     private javax.swing.JLabel lab_Impuestos;
     private javax.swing.JLabel lab_SubTotal;
@@ -700,6 +712,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel panelVenta;
     private javax.swing.JPanel panel_menu;
     private javax.swing.JLabel subTotal;
+    private javax.swing.JTextField tf_BuscarProducto;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
