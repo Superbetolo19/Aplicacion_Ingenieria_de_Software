@@ -51,7 +51,9 @@ public class Login extends javax.swing.JFrame {
         lab_Usuario = new javax.swing.JLabel();
         tf_Usuario = new javax.swing.JTextField();
         lab_Contraseña = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        passfield_Contraseña = new javax.swing.JPasswordField();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(0, 0));
@@ -245,9 +247,31 @@ public class Login extends javax.swing.JFrame {
         lab_Contraseña.setForeground(new java.awt.Color(255, 255, 255));
         lab_Contraseña.setText("Contraseña");
 
-        jPasswordField1.setBackground(new java.awt.Color(51, 51, 51));
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+        passfield_Contraseña.setBackground(new java.awt.Color(51, 51, 51));
+        passfield_Contraseña.setForeground(new java.awt.Color(255, 255, 255));
+        passfield_Contraseña.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        jPanel1.setBackground(java.awt.Color.darkGray);
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Entrar");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(jLabel1)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel1)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout panel_infoEncargadoLayout = new javax.swing.GroupLayout(panel_infoEncargado);
         panel_infoEncargado.setLayout(panel_infoEncargadoLayout);
@@ -260,9 +284,13 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(lab_Contraseña))
                 .addGap(41, 41, 41)
                 .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(passfield_Contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                     .addComponent(tf_Usuario))
                 .addGap(111, 111, 111))
+            .addGroup(panel_infoEncargadoLayout.createSequentialGroup()
+                .addGap(173, 173, 173)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_infoEncargadoLayout.setVerticalGroup(
             panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -274,8 +302,10 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lab_Contraseña)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(123, Short.MAX_VALUE))
+                    .addComponent(passfield_Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -381,9 +411,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel bt_RegistroEncargado;
     private javax.swing.JLabel icon_Encargado;
     private javax.swing.JLabel icon_admin;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lab_Contraseña;
     private javax.swing.JLabel lab_Registro;
     private javax.swing.JLabel lab_Usuario;
@@ -391,6 +422,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel panel_RegistroAdmin;
     private javax.swing.JPanel panel_RegistroEncargado;
     private javax.swing.JPanel panel_infoEncargado;
+    private javax.swing.JPasswordField passfield_Contraseña;
     private javax.swing.JTextField tf_Usuario;
     // End of variables declaration//GEN-END:variables
 }
