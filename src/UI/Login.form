@@ -7,9 +7,12 @@
       <Point value="[0, 0]"/>
     </Property>
     <Property name="undecorated" type="boolean" value="true"/>
+<<<<<<< HEAD
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[800, 500]"/>
     </Property>
+=======
+>>>>>>> kirbi2
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -32,10 +35,14 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Component id="panel_Opciones" alignment="0" pref="815" max="32767" attributes="0"/>
 =======
           <Component id="panel_Opciones" alignment="0" pref="800" max="32767" attributes="0"/>
 >>>>>>> 99c23a96c00c087399d3d749e036419c5af160ff
+=======
+          <Component id="panel_Opciones" alignment="0" pref="800" max="32767" attributes="0"/>
+>>>>>>> kirbi2
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="138" max="32767" attributes="0"/>
