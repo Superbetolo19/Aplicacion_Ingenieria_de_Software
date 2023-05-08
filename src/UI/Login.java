@@ -295,7 +295,11 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(panel_Opciones, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+=======
+            .addComponent(panel_Opciones, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+>>>>>>> 99c23a96c00c087399d3d749e036419c5af160ff
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap(138, Short.MAX_VALUE)
