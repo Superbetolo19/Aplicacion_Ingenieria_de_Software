@@ -292,8 +292,9 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        jTextField1.setBackground(new java.awt.Color(51, 51, 51));
         jTextField1.setText("jTextField1");
-        jTextField1.setBorder(null);
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
