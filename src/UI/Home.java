@@ -782,6 +782,8 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setEnabled(false);
         setMinimumSize(new java.awt.Dimension(822, 419));
 
         panelVenta.setBackground(new java.awt.Color(51, 51, 51));
@@ -1663,7 +1665,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel bt_BuscarProducto;
     private javax.swing.JPanel bt_CancelarCompra;
     private javax.swing.JPanel bt_EliminarProducto;
-    private javax.swing.JPanel bt_Menu;
+    public static javax.swing.JPanel bt_Menu;
     private javax.swing.JPanel bt_PanelAdmin;
     private javax.swing.JPanel bt_Productos;
     private javax.swing.JPanel bt_RetornoVategoria;
