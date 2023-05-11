@@ -667,7 +667,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel bt_BuscarProducto;
     private javax.swing.JPanel bt_CancelarCompra;
     private javax.swing.JPanel bt_EliminarProducto;
-    private javax.swing.JPanel bt_Menu;
+    public static javax.swing.JPanel bt_Menu;
     private javax.swing.JPanel bt_RetornoVategoria;
     private javax.swing.JPanel bt_cerrarMenu;
     private javax.swing.JLabel icon_BuscarProducto;
