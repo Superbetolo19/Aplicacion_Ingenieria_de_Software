@@ -82,11 +82,13 @@ public class Home extends javax.swing.JFrame {
         bt_Clientes = new javax.swing.JPanel();
         icon_Clientes = new javax.swing.JLabel();
         panel_Activida = new javax.swing.JPanel();
-        panel_AdminProductos = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        panel_Admin_ProductosOpcion = new javax.swing.JPanel();
         bt_agregarProducto = new javax.swing.JPanel();
         icon_agregarProducto = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         bt_VolverPanelVenta = new javax.swing.JPanel();
         icon_VolverPanelVenta = new javax.swing.JLabel();
 
@@ -568,6 +570,9 @@ public class Home extends javax.swing.JFrame {
 
         icon_cerrarMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back-button.png"))); // NOI18N
         icon_cerrarMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                icon_cerrarMenuMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 icon_cerrarMenuMouseEntered(evt);
             }
@@ -727,43 +732,13 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(bt_Productos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bt_Clientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 389, Short.MAX_VALUE))
         );
 
         panel_Activida.setBackground(java.awt.Color.darkGray);
         panel_Activida.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
 
-        panel_AdminProductos.setBackground(new java.awt.Color(51, 51, 51));
-
-        jTable1.setBackground(new java.awt.Color(51, 51, 51));
-        jTable1.setForeground(new java.awt.Color(0, 153, 153));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "Cantidad", "Producto", "Categoria", "Precio", "ID"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Float.class, java.lang.Integer.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jTable1.setGridColor(new java.awt.Color(102, 102, 102));
-        jTable1.setName(""); // NOI18N
-        jTable1.setShowGrid(true);
-        jScrollPane1.setViewportView(jTable1);
+        panel_Admin_ProductosOpcion.setBackground(new java.awt.Color(51, 51, 51));
 
         bt_agregarProducto.setBackground(java.awt.Color.darkGray);
         bt_agregarProducto.setForeground(new java.awt.Color(51, 51, 51));
@@ -787,27 +762,82 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout panel_AdminProductosLayout = new javax.swing.GroupLayout(panel_AdminProductos);
-        panel_AdminProductos.setLayout(panel_AdminProductosLayout);
-        panel_AdminProductosLayout.setHorizontalGroup(
-            panel_AdminProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_AdminProductosLayout.createSequentialGroup()
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Agregar Nuevo Producto");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panel_AdminProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_AdminProductosLayout.createSequentialGroup()
-                        .addComponent(bt_agregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 522, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        panel_AdminProductosLayout.setVerticalGroup(
-            panel_AdminProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_AdminProductosLayout.createSequentialGroup()
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bt_agregarProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Agregar Stock");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout panel_Admin_ProductosOpcionLayout = new javax.swing.GroupLayout(panel_Admin_ProductosOpcion);
+        panel_Admin_ProductosOpcion.setLayout(panel_Admin_ProductosOpcionLayout);
+        panel_Admin_ProductosOpcionLayout.setHorizontalGroup(
+            panel_Admin_ProductosOpcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_Admin_ProductosOpcionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_Admin_ProductosOpcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_Admin_ProductosOpcionLayout.createSequentialGroup()
+                        .addComponent(bt_agregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(panel_Admin_ProductosOpcionLayout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panel_Admin_ProductosOpcionLayout.setVerticalGroup(
+            panel_Admin_ProductosOpcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_Admin_ProductosOpcionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bt_agregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panel_Admin_ProductosOpcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout panel_ActividaLayout = new javax.swing.GroupLayout(panel_Activida);
@@ -816,20 +846,31 @@ public class Home extends javax.swing.JFrame {
             panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_ActividaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel_AdminProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_Admin_ProductosOpcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         panel_ActividaLayout.setVerticalGroup(
             panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_ActividaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel_AdminProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_Admin_ProductosOpcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         bt_VolverPanelVenta.setBackground(java.awt.Color.darkGray);
 
         icon_VolverPanelVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/return.png"))); // NOI18N
+        icon_VolverPanelVenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                icon_VolverPanelVentaMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icon_VolverPanelVentaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icon_VolverPanelVentaMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout bt_VolverPanelVentaLayout = new javax.swing.GroupLayout(bt_VolverPanelVenta);
         bt_VolverPanelVenta.setLayout(bt_VolverPanelVentaLayout);
@@ -1000,6 +1041,27 @@ public class Home extends javax.swing.JFrame {
         bt_Clientes.setBackground(Color.decode("#0099CC"));
     }//GEN-LAST:event_icon_ClientesMouseClicked
 
+    private void icon_VolverPanelVentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_VolverPanelVentaMouseClicked
+        // TODO add your handling code here:
+        panel_Admin.setVisible(false);
+        panelVenta.setVisible(true);
+    }//GEN-LAST:event_icon_VolverPanelVentaMouseClicked
+
+    private void icon_VolverPanelVentaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_VolverPanelVentaMouseEntered
+        // TODO add your handling code here:
+        bt_VolverPanelVenta.setBackground(Color.GRAY);
+    }//GEN-LAST:event_icon_VolverPanelVentaMouseEntered
+
+    private void icon_VolverPanelVentaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_VolverPanelVentaMouseExited
+        // TODO add your handling code here:
+        bt_VolverPanelVenta.setBackground(Color.DARK_GRAY);
+    }//GEN-LAST:event_icon_VolverPanelVentaMouseExited
+
+    private void icon_cerrarMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_cerrarMenuMouseClicked
+        // TODO add your handling code here:
+        panel_menu.setVisible(false);
+    }//GEN-LAST:event_icon_cerrarMenuMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1068,15 +1130,17 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel impuestos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel labTotal;
     private javax.swing.JLabel lab_Impuestos;
     private javax.swing.JLabel lab_SubTotal;
@@ -1089,7 +1153,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel panelVenta;
     private javax.swing.JPanel panel_Activida;
     private javax.swing.JPanel panel_Admin;
-    private javax.swing.JPanel panel_AdminProductos;
+    private javax.swing.JPanel panel_Admin_ProductosOpcion;
     private javax.swing.JPanel panel_menu;
     private javax.swing.JPanel panel_menuOpciones;
     private javax.swing.JLabel subTotal;
