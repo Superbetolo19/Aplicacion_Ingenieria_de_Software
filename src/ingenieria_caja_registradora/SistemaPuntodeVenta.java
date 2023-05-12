@@ -1,29 +1,28 @@
 
 package ingenieria_caja_registradora;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+import java.util.*;
 
-
-/**
- *
- * @author otaku
- */
 public class SistemaPuntodeVenta {
     private Persona admin,encargado;
-    private ClienteConsentido a,b,c;
+    private ArrayList<ClienteConsentido> clientes = new ArrayList<>();
     private String contradmin, contraencargado;
 
     public SistemaPuntodeVenta(){
         admin= new Persona ("ToñodelosMorales", "2212159376", "toñito21@gmail.com");
         encargado= new Persona( "MarthaFloresPerez", "2224869513", "martha4flopez@gmail.com");
-        a= new ClienteConsentido("DafneDíaz", "221144556699", "daf_diaz@gmail.com", 2000, 001, 2000, 0);
-        b= new ClienteConsentido("BrendadelaConcepcion", "2235961475", "conchitasalvaje69@gmail.com", 2000, 001, 1300, 700);
-        c= new ClienteConsentido("ErickCastro", "22453896765", "dios_salveje_ajedrecista_13@gmail.com", 2000, 001, 1416, 584);
+        clientes.add(nuevocliente("DafneDíaz", "221144556699", "daf_diaz@gmail.com", 2000, 001, 2000, 0));
+        clientes.add(nuevocliente("BrendadelaConcepcion", "2235961475", "conchitasalvaje69@gmail.com", 2000, 001, 1300, 700));
+        clientes.add(nuevocliente("ErickCastro", "22453896765", "dios_salveje_ajedrecista_13@gmail.com", 2000, 001, 1416, 584));
     }
-
+    
+    public ClienteConsentido nuevocliente(String nombre, String telefono, String mail, double credito, int clienteID, float saldoDisponible, float deuda){
+       ClienteConsentido n = new ClienteConsentido(nombre,telefono,mail,credito,clienteID,saldoDisponible,deuda);
+       return n;
+    }
+    public void eliminarcliente(int clienteID){
+        clientes.remove(clientes.indexOf(clienteID));
+    }
     public Persona getAdmin() {
         return admin;
     }
@@ -38,30 +37,6 @@ public class SistemaPuntodeVenta {
 
     public void setEncargado(Persona encargado) {
         this.encargado = encargado;
-    }
-
-    public ClienteConsentido getA() {
-        return a;
-    }
-
-    public void setA(ClienteConsentido a) {
-        this.a = a;
-    }
-
-    public ClienteConsentido getB() {
-        return b;
-    }
-
-    public void setB(ClienteConsentido b) {
-        this.b = b;
-    }
-
-    public ClienteConsentido getC() {
-        return c;
-    }
-
-    public void setC(ClienteConsentido c) {
-        this.c = c;
     }
 
     public String getContradmin() {
