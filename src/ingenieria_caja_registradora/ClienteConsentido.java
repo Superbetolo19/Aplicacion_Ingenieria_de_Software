@@ -1,5 +1,5 @@
 
-package sistemapuntodeventa;
+package ingenieria_caja_registradora;
 public class ClienteConsentido extends Persona {
     private double credito;
     private int clienteID;

@@ -1,4 +1,4 @@
-package sistemapuntodeventa;
+package ingenieria_caja_registradora;
 import java.util.Scanner;
 
 public class SistemaBancario {

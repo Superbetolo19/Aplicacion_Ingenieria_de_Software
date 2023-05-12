@@ -1,4 +1,4 @@
-package sistemapuntodeventa;
+package ingenieria_caja_registradora;
 
 public class Persona {
     private String nombre;
