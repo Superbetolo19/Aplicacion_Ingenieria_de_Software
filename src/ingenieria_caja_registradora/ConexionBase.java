@@ -17,7 +17,7 @@ public class ConexionBase {
         //RUTA URL DE LA BASE DE DATOS
         String Host = "localhost";
         String Puerto = "3306";
-        String BaseData = "sistemapuntodeventa";
+        String BaseData = "samuel";
 
         //ACCEDER URL
         String User = "root";
@@ -32,6 +32,7 @@ public class ConexionBase {
         try {
             Class.forName(Driver);
             ConexionSQL = DriverManager.getConnection(DataBaseURL, User, Password);
+            
         } catch (Exception e) {
             System.out.println("No se pudo conectar a la base de datos");
         }
@@ -40,7 +41,7 @@ public class ConexionBase {
 
     //METODO PARA PODER HACER LA CONEXION CON LA BASE DE DATOS Y MOSTRAR LA INFORMACION DE ESTA
     public ResultSet Visualizar() {
-        String sql = "select * from sistemapuntodeventa.producto";
+        String sql = "select * from producto";
         Connection Con = ConexionBase();
         ResultSet Rs = null;
         try {
