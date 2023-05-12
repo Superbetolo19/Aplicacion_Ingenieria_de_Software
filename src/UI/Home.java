@@ -1013,6 +1013,7 @@ public class Home extends javax.swing.JFrame {
         tf_BuscarProducto.setForeground(new java.awt.Color(255, 255, 255));
         tf_BuscarProducto.setToolTipText("");
         tf_BuscarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        tf_BuscarProducto.setCaretColor(new java.awt.Color(255, 255, 51));
         tf_BuscarProducto.setFocusable(false);
         tf_BuscarProducto.setName("a"); // NOI18N
         tf_BuscarProducto.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1460,7 +1461,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 399, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 399, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1666,7 +1667,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel bt_BuscarProducto;
     private javax.swing.JPanel bt_CancelarCompra;
     private javax.swing.JPanel bt_EliminarProducto;
-    public static javax.swing.JPanel bt_Menu;
+    private javax.swing.JPanel bt_Menu;
     private javax.swing.JPanel bt_PanelAdmin;
     private javax.swing.JPanel bt_Productos;
     private javax.swing.JPanel bt_RetornoVategoria;

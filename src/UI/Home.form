@@ -558,6 +558,9 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="ff" red="ff" type="rgb"/>
+                    </Property>
                     <Property name="focusable" type="boolean" value="false"/>
                     <Property name="name" type="java.lang.String" value="a" noResource="true"/>
                   </Properties>
