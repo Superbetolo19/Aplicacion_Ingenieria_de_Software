@@ -1,5 +1,4 @@
 
-
 package UI;
 
 import java.awt.Color;
@@ -14,7 +13,7 @@ import java.awt.Color;
  * @author Kirby
  */
 public class Login extends javax.swing.JFrame {
-
+    private Home h;
     private String nombre;
     private String correo;
     /**
@@ -23,6 +22,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         nombre = "";
         correo = "";
+        h = new Home();
         
         initComponents();
         panel_loginEncargado.setVisible(false);
@@ -563,10 +563,9 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
         this.setVisible(false);
+        h.getbtMenu().setVisible(false);
         h.setVisible(true);
-        h.bt_Menu.setVisible(false);
     }//GEN-LAST:event_panel_EntrarEncargadoMouseClicked
 
     private void tf_CorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CorreoActionPerformed
@@ -649,6 +648,7 @@ public class Login extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
+                
             }
         });
     }
@@ -685,4 +685,400 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField tf_Usuario;
     // End of variables declaration                   
 }
+/*
+package UI;
 
+import java.awt.Color;
+
+
+
+
+public class Login extends javax.swing.JFrame {
+
+    private String nombre;
+    private String correo;
+    private Home panelHome;
+  
+    public Login() {
+        nombre = "";
+        correo = "";
+        panelHome = new Home();
+        panelHome.setVisible(false);
+        
+        initComponents();
+        panel_infoEncargado.setVisible(false);
+        this.setLocationRelativeTo(null);
+    }
+
+  
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        panel_Opciones = new javax.swing.JPanel();
+        lab_Registro = new javax.swing.JLabel();
+        ClosePage_1 = new javax.swing.JLabel();
+        panel_RegistroAdmin = new javax.swing.JPanel();
+        icon_admin = new javax.swing.JLabel();
+        bt_RegistroAdmin = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        panel_RegistroEncargado = new javax.swing.JPanel();
+        icon_Encargado = new javax.swing.JLabel();
+        bt_RegistroEncargado = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        panel_infoEncargado = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(0, 0));
+        setUndecorated(true);
+        setResizable(false);
+
+        panel_Opciones.setBackground(new java.awt.Color(51, 51, 51));
+        panel_Opciones.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        lab_Registro.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        lab_Registro.setForeground(new java.awt.Color(255, 255, 255));
+        lab_Registro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_Registro.setText("Registro");
+
+        ClosePage_1.setBackground(new java.awt.Color(255, 255, 255));
+        ClosePage_1.setForeground(new java.awt.Color(255, 255, 255));
+        ClosePage_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eliminar.png"))); // NOI18N
+        ClosePage_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ClosePage_1MouseClicked(evt);
+            }
+        });
+
+        panel_RegistroAdmin.setBackground(new java.awt.Color(51, 51, 51));
+        panel_RegistroAdmin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+
+        icon_admin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icon_admin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/empresario.png"))); // NOI18N
+
+        bt_RegistroAdmin.setBackground(java.awt.Color.darkGray);
+        bt_RegistroAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_RegistroAdminMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_RegistroAdminMouseExited(evt);
+            }
+        });
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Administrador");
+
+        javax.swing.GroupLayout bt_RegistroAdminLayout = new javax.swing.GroupLayout(bt_RegistroAdmin);
+        bt_RegistroAdmin.setLayout(bt_RegistroAdminLayout);
+        bt_RegistroAdminLayout.setHorizontalGroup(
+            bt_RegistroAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_RegistroAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        bt_RegistroAdminLayout.setVerticalGroup(
+            bt_RegistroAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_RegistroAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_RegistroAdminLayout = new javax.swing.GroupLayout(panel_RegistroAdmin);
+        panel_RegistroAdmin.setLayout(panel_RegistroAdminLayout);
+        panel_RegistroAdminLayout.setHorizontalGroup(
+            panel_RegistroAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_RegistroAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_RegistroAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(icon_admin, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
+                    .addComponent(bt_RegistroAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        panel_RegistroAdminLayout.setVerticalGroup(
+            panel_RegistroAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_RegistroAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(icon_admin, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(bt_RegistroAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        panel_RegistroEncargado.setBackground(new java.awt.Color(51, 51, 51));
+        panel_RegistroEncargado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        panel_RegistroEncargado.setPreferredSize(new java.awt.Dimension(200, 250));
+
+        icon_Encargado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icon_Encargado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuario.png"))); // NOI18N
+
+        bt_RegistroEncargado.setBackground(java.awt.Color.darkGray);
+        bt_RegistroEncargado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_RegistroEncargadoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_RegistroEncargadoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_RegistroEncargadoMouseExited(evt);
+            }
+        });
+
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Encargado");
+
+        javax.swing.GroupLayout bt_RegistroEncargadoLayout = new javax.swing.GroupLayout(bt_RegistroEncargado);
+        bt_RegistroEncargado.setLayout(bt_RegistroEncargadoLayout);
+        bt_RegistroEncargadoLayout.setHorizontalGroup(
+            bt_RegistroEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_RegistroEncargadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        bt_RegistroEncargadoLayout.setVerticalGroup(
+            bt_RegistroEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_RegistroEncargadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_RegistroEncargadoLayout = new javax.swing.GroupLayout(panel_RegistroEncargado);
+        panel_RegistroEncargado.setLayout(panel_RegistroEncargadoLayout);
+        panel_RegistroEncargadoLayout.setHorizontalGroup(
+            panel_RegistroEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_RegistroEncargadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_RegistroEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(icon_Encargado, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                    .addComponent(bt_RegistroEncargado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        panel_RegistroEncargadoLayout.setVerticalGroup(
+            panel_RegistroEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_RegistroEncargadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(icon_Encargado, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(bt_RegistroEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_OpcionesLayout = new javax.swing.GroupLayout(panel_Opciones);
+        panel_Opciones.setLayout(panel_OpcionesLayout);
+        panel_OpcionesLayout.setHorizontalGroup(
+            panel_OpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_OpcionesLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addComponent(panel_RegistroEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(108, 108, 108)
+                .addComponent(panel_RegistroAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_OpcionesLayout.createSequentialGroup()
+                .addGroup(panel_OpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lab_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_OpcionesLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ClosePage_1)))
+                .addContainerGap())
+        );
+        panel_OpcionesLayout.setVerticalGroup(
+            panel_OpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_OpcionesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ClosePage_1)
+                .addGap(18, 18, 18)
+                .addComponent(lab_Registro)
+                .addGap(42, 42, 42)
+                .addGroup(panel_OpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panel_RegistroEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panel_RegistroAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(125, Short.MAX_VALUE))
+        );
+
+        panel_infoEncargado.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Nombre");
+
+        jTextField1.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 204)));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Correo");
+
+        jTextField2.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 204)));
+
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Numero cel");
+
+        jTextField3.setText("jTextField3");
+
+        javax.swing.GroupLayout panel_infoEncargadoLayout = new javax.swing.GroupLayout(panel_infoEncargado);
+        panel_infoEncargado.setLayout(panel_infoEncargadoLayout);
+        panel_infoEncargadoLayout.setHorizontalGroup(
+            panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_infoEncargadoLayout.createSequentialGroup()
+                .addContainerGap(116, Short.MAX_VALUE)
+                .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addGap(23, 23, 23)
+                .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(jTextField3))
+                .addGap(111, 111, 111))
+        );
+        panel_infoEncargadoLayout.setVerticalGroup(
+            panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_infoEncargadoLayout.createSequentialGroup()
+                .addGap(84, 84, 84)
+                .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_infoEncargadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(81, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panel_Opciones, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(138, Short.MAX_VALUE)
+                    .addComponent(panel_infoEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(150, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panel_Opciones, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(120, Short.MAX_VALUE)
+                    .addComponent(panel_infoEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(127, Short.MAX_VALUE)))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void ClosePage_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClosePage_1MouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_ClosePage_1MouseClicked
+
+    private void bt_RegistroAdminMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RegistroAdminMouseEntered
+        // TODO add your handling code here:
+        bt_RegistroAdmin.setBackground(Color.GRAY);
+    }//GEN-LAST:event_bt_RegistroAdminMouseEntered
+
+    private void bt_RegistroAdminMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RegistroAdminMouseExited
+        // TODO add your handling code here:
+        bt_RegistroAdmin.setBackground(Color.DARK_GRAY);
+    }//GEN-LAST:event_bt_RegistroAdminMouseExited
+
+    private void bt_RegistroEncargadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RegistroEncargadoMouseEntered
+        // TODO add your handling code here:
+        bt_RegistroEncargado.setBackground(Color.GRAY);
+    }//GEN-LAST:event_bt_RegistroEncargadoMouseEntered
+
+    private void bt_RegistroEncargadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RegistroEncargadoMouseExited
+        
+        bt_RegistroEncargado.setBackground(Color.DARK_GRAY);
+    }//GEN-LAST:event_bt_RegistroEncargadoMouseExited
+
+    private void bt_RegistroEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RegistroEncargadoMouseClicked
+        
+        panel_RegistroAdmin.setVisible(false);
+        panel_RegistroEncargado.setVisible(false);
+        panel_infoEncargado.setVisible(true);
+    }//GEN-LAST:event_bt_RegistroEncargadoMouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    
+    public static void main(String args[]) {
+        
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        
+
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Login().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ClosePage_1;
+    private javax.swing.JPanel bt_RegistroAdmin;
+    private javax.swing.JPanel bt_RegistroEncargado;
+    private javax.swing.JLabel icon_Encargado;
+    private javax.swing.JLabel icon_admin;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel lab_Registro;
+    private javax.swing.JPanel panel_Opciones;
+    private javax.swing.JPanel panel_RegistroAdmin;
+    private javax.swing.JPanel panel_RegistroEncargado;
+    private javax.swing.JPanel panel_infoEncargado;
+    // End of variables declaration//GEN-END:variables
+}
+*/
