@@ -569,12 +569,11 @@ public class Login extends javax.swing.JFrame {
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
         String usuario= tf_Usuario.getText();
-        char[] contraseña=passfield_Contraseña1.getPassword();
-        nombre= s.getEncargado().getNombre();
-        String contra= new String(contraseña);
-        JOptionPane.showMessageDialog(error,contra);
-        //&&contraseña.equals("[1,2,3,4]")
-        if(nombre.equals(usuario)&&contra.equals("1,2,3,4")){
+        char[] contraseña=passfield_Contraseña.getPassword();
+        String nombre= s.getEncargado().getNombre();
+        String pass= new String(contraseña);
+        String contra="32353";
+        if(nombre.equals(usuario)&&pass.equals(contra)){
             this.setVisible(false);
             h.getbtMenu().setVisible(false);
             h.setVisible(true);
@@ -595,8 +594,17 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarAdminMouseClicked
         // TODO add your handling code here:
-        this.setVisible(false);
-        h.setVisible(true);
+        String correo= tf_Correo.getText();
+        char[] contraseña=passfield_Contraseña1.getPassword();
+        String mail= s.getAdmin().getMail();
+        String pass= new String(contraseña);
+        String contra="161224";
+        if(correo.equals(mail)&&pass.equals(contra)){
+            this.setVisible(false);
+            h.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(error,"Usuario u contraseña no válidos" );
+        }
     }//GEN-LAST:event_panel_EntrarAdminMouseClicked
 
     private void panel_EntrarAdminMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarAdminMouseEntered
