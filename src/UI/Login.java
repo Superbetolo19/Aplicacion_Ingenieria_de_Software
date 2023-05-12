@@ -578,7 +578,6 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarAdminMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
         this.setVisible(false);
         h.setVisible(true);
     }//GEN-LAST:event_panel_EntrarAdminMouseClicked
