@@ -56,17 +56,22 @@ public class ConexionBase {
     //METODO PARA AGREGAR INFORMACION A LA BASE DE DATOS
     public void GuardarInformacion(String nombre, String Descripcion, float Precio, int Cantidad, int Id) {
         Connection Con = ConexionBase();
-        String sql = "insert into producto(Nombre,Descripcion,Precio,Id,Precio) values(?,?,?,?,?)";
-        FileInputStream Fi = null;
+        String sql = "insert into producto(Nombre,Descripcion,Precio,Precio,Id) values(?,?,?,?,?)";
+        //FileInputStream Fi = null;
         PreparedStatement Ps = null;
         try {
             Ps = Con.prepareStatement(sql);
             
             Ps.setString(1, nombre);
+            System.out.println(nombre);
             Ps.setString(2, Descripcion);
+            System.out.println(Descripcion);
             Ps.setFloat(3, Precio);
+            System.out.println(Precio);
             Ps.setInt(4, Cantidad);
+            System.out.println(Cantidad);
             Ps.setInt(5, Id);
+            System.out.println(Id);
             Ps.executeUpdate();
             
         } catch (Exception e) {
@@ -91,7 +96,6 @@ public class ConexionBase {
             Ps.setFloat(3, Precio);
             Ps.setInt(4, Id);
             Ps.setInt(5, Cantidad);
-            System.out.println("a");
             Ps.executeUpdate();
             
         } catch (Exception e) {
