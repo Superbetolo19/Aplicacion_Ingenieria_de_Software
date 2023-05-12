@@ -14,7 +14,7 @@ import java.awt.Color;
  * @author Kirby
  */
 public class Login extends javax.swing.JFrame {
-
+    private Home h;
     private String nombre;
     private String correo;
     /**
@@ -24,6 +24,7 @@ public class Login extends javax.swing.JFrame {
         nombre = "";
         correo = "";
         
+        h = new Home();
         initComponents();
         panel_loginEncargado.setVisible(false);
         panel_loginAdmin.setVisible(false);
@@ -563,7 +564,7 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
+        
         this.setVisible(false);
         h.setVisible(true);
         h.bt_Menu.setVisible(false);
@@ -579,7 +580,7 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarAdminMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
+        
         this.setVisible(false);
         h.setVisible(true);
     }//GEN-LAST:event_panel_EntrarAdminMouseClicked
