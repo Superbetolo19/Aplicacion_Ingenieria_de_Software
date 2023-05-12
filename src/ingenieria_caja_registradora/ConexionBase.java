@@ -65,10 +65,15 @@ public class ConexionBase {
 
             Ps = Con.prepareStatement(sql);
             Ps.setBinaryStream(1, Fi);
+            System.out.println(Fi);
             Ps.setString(2, Descripcion);
+            System.out.println(Descripcion);
             Ps.setInt(3, Cantidad);
+            System.out.println(Cantidad);
             Ps.setInt(4, Id);
+            System.out.println(Id);
             Ps.setFloat(5, Precio);
+            System.out.println(Precio);
             Ps.executeUpdate();
         } catch (Exception e) {
             System.out.println("No se pudo guardar los datos");
