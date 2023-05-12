@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package UI;
 
@@ -685,6 +686,8 @@ public class Login extends javax.swing.JFrame {
     // End of variables declaration                   
 }
 /*
+=======
+>>>>>>> e405d39f28c33bba5f0fb2125e0657f663df8119
 package UI;
 
 import java.awt.Color;
@@ -884,7 +887,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(panel_RegistroEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(108, 108, 108)
                 .addComponent(panel_RegistroAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(23, 151, Short.MAX_VALUE))
             .addGroup(panel_OpcionesLayout.createSequentialGroup()
                 .addGroup(panel_OpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lab_Registro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -986,9 +989,9 @@ public class Login extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(120, Short.MAX_VALUE)
+                    .addContainerGap(119, Short.MAX_VALUE)
                     .addComponent(panel_infoEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(127, Short.MAX_VALUE)))
+                    .addContainerGap(126, Short.MAX_VALUE)))
         );
 
         pack();
@@ -1080,4 +1083,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel panel_infoEncargado;
     // End of variables declaration//GEN-END:variables
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> e405d39f28c33bba5f0fb2125e0657f663df8119

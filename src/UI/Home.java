@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> e405d39f28c33bba5f0fb2125e0657f663df8119
 package UI;
 
 import java.awt.Color;
@@ -1711,4 +1714,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> e405d39f28c33bba5f0fb2125e0657f663df8119
