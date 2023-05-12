@@ -363,6 +363,7 @@ public class PantallaCarga1 extends javax.swing.JFrame {
             Object[] producto = new Object[5];
             Modelo = (DefaultTableModel) jTable1.getModel();
             while (Rs.next()) {
+                
                 Blob blob = Rs.getBlob("Imagen");
                 if (blob != null) {
                     try {
@@ -372,12 +373,14 @@ public class PantallaCarga1 extends javax.swing.JFrame {
                             Img = ImageIO.read(new ByteArrayInputStream(data));
                         } catch (Exception e) {
                         }
+                        
                         ImageIcon Icon = new ImageIcon(Img.getScaledInstance(100, 100, 0));
                         producto[0] = new JLabel(Icon);
                         producto[1] = Rs.getString("Descripcion");
                         producto[2] = Rs.getInt("Cantidad");
                         producto[3] = Rs.getInt("Id");
                         producto[4] = Rs.getFloat("Precio");
+                        
                     } catch (Exception e) {
                         producto[0] = "No imagen";
                     }
@@ -410,7 +413,7 @@ public class PantallaCarga1 extends javax.swing.JFrame {
             if (Imagen == null || Des.equals("") || Cant.equals("") || Id.equals("") || Precio.equals("")) {
                 JOptionPane.showMessageDialog(null, "Ingresa los datos que faltan");
             } else {
-                CB.GuardarInformacion(Ruta, Des, Integer.valueOf(Cant), Integer.valueOf(Id), Float.valueOf(Precio));
+                CB.GuardarInformacion(Ruta, Des, Integer.valueOf(Cant), Integer.valueOf(Id), Integer.valueOf(Precio));
                 JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
                 LimpiaTabla();
             }

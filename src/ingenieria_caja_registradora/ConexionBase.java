@@ -30,7 +30,6 @@ public class ConexionBase {
         String DataBaseURL = "jdbc:mysql://" + Host + ":" + Puerto + "/" + BaseData;
 
         try {
-            System.out.println("entra");
             Class.forName(Driver);
             ConexionSQL = DriverManager.getConnection(DataBaseURL, User, Password);
         } catch (Exception e) {
@@ -47,6 +46,7 @@ public class ConexionBase {
         try {
             PreparedStatement Ps = Con.prepareStatement(sql);
             Rs = Ps.executeQuery();
+            
         } catch (Exception e) {
             System.out.println("ERROR");
         }
@@ -54,44 +54,46 @@ public class ConexionBase {
     }
 
     //METODO PARA AGREGAR INFORMACION A LA BASE DE DATOS
-    public void GuardarInformacion(String Ruta, String Descripcion, int Cantidad, int Id, float Precio) {
+    public void GuardarInformacion(String nombre, String Descripcion, float Precio, int Cantidad, int Id) {
         Connection Con = ConexionBase();
-        String sql = "insert into producto(Imagen,Descripcion,Cantidad,Id,Precio) values(?,?,?,?,?)";
+        String sql = "insert into producto(Nombre,Descripcion,Precio,Id,Precio) values(?,?,?,?,?)";
         FileInputStream Fi = null;
         PreparedStatement Ps = null;
         try {
-            File Archivo = new File(Ruta);
-            Fi = new FileInputStream(Archivo);
-
             Ps = Con.prepareStatement(sql);
-            Ps.setBinaryStream(1, Fi);
+            
+            Ps.setString(1, nombre);
             Ps.setString(2, Descripcion);
-            Ps.setInt(3, Cantidad);
-            Ps.setInt(4, Id);
-            Ps.setFloat(5, Precio);
+            Ps.setFloat(3, Precio);
+            Ps.setInt(4, Cantidad);
+            Ps.setInt(5, Id);
             Ps.executeUpdate();
+            
         } catch (Exception e) {
             System.out.println("No se pudo guardar los datos");
         }
     }
 
     //METODO PARA CAMBIAR ALGUNA INFORMACION DE LA BASE DE DATOS
-    public void ModificarInformacion(String Ruta, String Descripcion, int Cantidad, int Id, float Precio) {
+    public void ModificarInformacion(String nombre, String Descripcion, int Cantidad, int Id, float Precio) {
         Connection Con = ConexionBase();
-        String sql = "Update producto set Imagen= ?, Descripcion= ?,Cantidad= ?,Id=?, Precio=? where Id=" + Id;
-        FileInputStream Fi = null;
+        //String sql = "Update producto set Nombre= ?, Descripcion= ?,Cantidad= ?,Id=?, Precio=? where Id=" + Id;
+        String sql = "UPDATE producto SET Nombre = ?, Descripcion = ?, Cantidad = ?, Precio = ? WHERE Id = ?";
+//        FileInputStream Fi = null;
         PreparedStatement Ps = null;
         try {
-            File Archivo = new File(Ruta);
-            Fi = new FileInputStream(Archivo);
-
+//            File Archivo = new File(Nombre);
+//            Fi = new FileInputStream(Archivo);
+            
             Ps = Con.prepareStatement(sql);
-            Ps.setBinaryStream(1, Fi);
+            Ps.setString(1, nombre);
             Ps.setString(2, Descripcion);
-            Ps.setInt(3, Cantidad);
+            Ps.setFloat(3, Precio);
             Ps.setInt(4, Id);
-            Ps.setFloat(5, Precio);
+            Ps.setInt(5, Cantidad);
+            System.out.println("a");
             Ps.executeUpdate();
+            
         } catch (Exception e) {
             System.out.println("No se pudo Cambiar los datos");
         }

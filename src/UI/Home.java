@@ -1,15 +1,21 @@
 package UI;
 
 import ingenieria_caja_registradora.ConexionBase;
+import ingenieria_caja_registradora.ImagenTabla;
 import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -20,6 +26,12 @@ public class Home extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
+    
+    ConexionBase ConSQL = new ConexionBase();
+    Connection Conect;
+    int Idc;
+    DefaultTableModel Modelo;
+    
     public Home() {
         this.conSQL = new ConexionBase();
         initComponents();
@@ -114,7 +126,7 @@ public class Home extends javax.swing.JFrame {
         lab_Descripcion = new javax.swing.JLabel();
         tf_Nombre = new javax.swing.JTextField();
         ta_Descripcion = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        ta_SetDescripcion = new javax.swing.JTextArea();
         tf_Precio = new javax.swing.JTextField();
         lab_Precio = new javax.swing.JLabel();
         tf_Cantidad = new javax.swing.JTextField();
@@ -1007,7 +1019,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(bt_ReturnPanelAdmin2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 454, Short.MAX_VALUE)
+                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1052,7 +1064,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panel_ModificarproductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1))
                 .addContainerGap())
         );
         panel_ModificarproductoLayout.setVerticalGroup(
@@ -1112,9 +1124,9 @@ public class Home extends javax.swing.JFrame {
         lab_Descripcion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Descripcion.setText("Descipcion");
 
-        jTextArea1.setColumns(15);
-        jTextArea1.setRows(4);
-        ta_Descripcion.setViewportView(jTextArea1);
+        ta_SetDescripcion.setColumns(15);
+        ta_SetDescripcion.setRows(4);
+        ta_Descripcion.setViewportView(ta_SetDescripcion);
 
         lab_Precio.setForeground(new java.awt.Color(255, 255, 255));
         lab_Precio.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -1129,12 +1141,20 @@ public class Home extends javax.swing.JFrame {
         lab_Id.setText("Id");
 
         bt_AgregarProductoNuevo.setBackground(java.awt.Color.darkGray);
+        bt_AgregarProductoNuevo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_AgregarProductoNuevoMouseClicked(evt);
+            }
+        });
 
         icon_AgregarProductoNuevo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         icon_AgregarProductoNuevo.setForeground(new java.awt.Color(255, 255, 255));
         icon_AgregarProductoNuevo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icon_AgregarProductoNuevo.setText("Agregar");
         icon_AgregarProductoNuevo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                icon_AgregarProductoNuevoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 icon_AgregarProductoNuevoMouseEntered(evt);
             }
@@ -1586,6 +1606,23 @@ public class Home extends javax.swing.JFrame {
         bt_CambiarStock.setBackground(Color.decode("#333333"));
     }//GEN-LAST:event_jLabel6MouseExited
 
+    private void bt_AgregarProductoNuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AgregarProductoNuevoMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_bt_AgregarProductoNuevoMouseClicked
+
+    private void icon_AgregarProductoNuevoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_AgregarProductoNuevoMouseClicked
+        // TODO add your handling code here:
+        agregar();
+        tf_Nombre.setText("");
+        ta_SetDescripcion.setText("");
+        tf_Precio.setText("");
+        tf_Cantidad.setText("");
+        tf_Id.setText("");
+        //Ruta = "";
+        ConsultaBase();
+    }//GEN-LAST:event_icon_AgregarProductoNuevoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1619,6 +1656,86 @@ public class Home extends javax.swing.JFrame {
                 new Home().setVisible(true);
             }
         });
+    }
+    
+    //METODO PARA CONSULTAR LOS DATOS EN LA BASE DE DATOS Y MOSTRARLOS EN UNA TABLA
+    public void ConsultaBase() {
+        Conect = ConSQL.ConexionBase();
+        ResultSet Rs = ConSQL.Visualizar();
+
+        jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
+        try {
+            Object[] producto = new Object[5];
+            Modelo = (DefaultTableModel) jTable1.getModel();
+            while (Rs.next()) {
+                
+//                Blob blob = Rs.getBlob("Imagen");
+//                if (blob != null) {
+//                    try {
+////                        //byte[] data = blob.getBytes(1, (int) blob.length());
+////                        BufferedImage Img = null;
+////                        try {
+////                            Img = ImageIO.read(new ByteArrayInputStream(data));
+////                        } catch (Exception e) {
+////                        }
+//                        
+////                        ImageIcon Icon = new ImageIcon(Img.getScaledInstance(100, 100, 0));
+//                        
+//                        
+//                    } catch (Exception e) {
+//                        producto[0] = "No imagen";
+//                    }
+//
+//                } else {
+//                    producto[0] = "No imagen";
+//                }
+
+               
+                producto[0] = Rs.getString("Nombre");
+                producto[1] = Rs.getString("Descripcion");
+                producto[2] = Rs.getInt("Cantidad");
+                producto[3] = Rs.getInt("Id");
+                producto[4] = Rs.getFloat("Precio");
+
+                Modelo.addRow(producto);
+            }
+            jTable1.setModel(Modelo);
+            jTable1.setRowHeight(100);
+
+        } catch (Exception e) {
+            System.out.println("Error para mostrar Datos");
+        }
+    }
+    
+    //METODO PARA AGREGAR DATOS A LA BASE DE DATOS
+    public void agregar() {
+        ConexionBase CB = new ConexionBase();
+
+        //Icon Imagen = jLabel1.getIcon();
+        String nom = tf_Nombre.getText();
+        String Des = ta_SetDescripcion.getText();
+        String Cant = tf_Cantidad.getText();
+        String Id = tf_Id.getText();
+        String Precio = tf_Precio.getText();
+
+        try {
+            if (Des.equals("") || Cant.equals("") || Id.equals("") || Precio.equals("")) {
+                JOptionPane.showMessageDialog(null, "Ingresa los datos que faltan");
+            } else {
+                CB.GuardarInformacion(nom, Des, Float.valueOf(Precio), Integer.valueOf(Cant), Integer.valueOf(Id));
+                JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
+                LimpiaTabla();
+            }
+        } catch (Exception e) {
+        }
+    }
+    
+    //METODO PARA LIMPIAR LA TABLA CUANDO SE INSERTEN DATOS NUEVOS Y SE MUESTREN
+    public void LimpiaTabla() {
+        for (int i = 0; i < jTable1.getRowCount(); i++) {
+            Modelo.removeRow(i);
+            i -= 1;
+        }
     }
     
     public JPanel getbtMenu(){
@@ -1678,7 +1795,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel labTotal;
     private javax.swing.JLabel lab_Cantidad;
@@ -1704,6 +1820,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel panel_menuOpciones;
     private javax.swing.JLabel subTotal;
     private javax.swing.JScrollPane ta_Descripcion;
+    private javax.swing.JTextArea ta_SetDescripcion;
     private javax.swing.JTextField tf_BuscarProducto;
     private javax.swing.JTextField tf_Cantidad;
     private javax.swing.JTextField tf_Id;
