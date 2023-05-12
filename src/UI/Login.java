@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 package UI;
 
@@ -1085,5 +1085,4 @@ public class Login extends javax.swing.JFrame {
 }
 <<<<<<< HEAD
 */
-=======
->>>>>>> e405d39f28c33bba5f0fb2125e0657f663df8119
+
