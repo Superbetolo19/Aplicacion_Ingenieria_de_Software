@@ -1,7 +1,10 @@
 
 package UI;
 
+import ingenieria_caja_registradora.*;
 import java.awt.Color;
+import java.util.Arrays;
+import javax.swing.*;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,6 +17,7 @@ import java.awt.Color;
  */
 public class Login extends javax.swing.JFrame {
     private Home h;
+    private SistemaPuntodeVenta s;
     private String nombre;
     private String correo;
     /**
@@ -23,8 +27,8 @@ public class Login extends javax.swing.JFrame {
         nombre = "";
         correo = "";
         h = new Home();
+        s = new SistemaPuntodeVenta();
         
-        h = new Home();
         initComponents();
         panel_loginEncargado.setVisible(false);
         panel_loginAdmin.setVisible(false);
@@ -564,9 +568,21 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
-        this.setVisible(false);
-        h.getbtMenu().setVisible(false);
-        h.setVisible(true);
+        String usuario= tf_Usuario.getText();
+        char[] contraseña=passfield_Contraseña1.getPassword();
+        nombre= s.getEncargado().getNombre();
+        String contra= new String(contraseña);
+        JOptionPane.showMessageDialog(error,contra);
+        //&&contraseña.equals("[1,2,3,4]")
+        if(nombre.equals(usuario)&&contra.equals("1,2,3,4")){
+            this.setVisible(false);
+            h.getbtMenu().setVisible(false);
+            h.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(error,"Usuario u contraseña no válidos" );
+            
+        }
+        
     }//GEN-LAST:event_panel_EntrarEncargadoMouseClicked
 
     private void tf_CorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CorreoActionPerformed
@@ -683,6 +699,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField passfield_Contraseña1;
     private javax.swing.JTextField tf_Correo;
     private javax.swing.JTextField tf_Usuario;
+    private JFrame error = new JFrame();
     // End of variables declaration                   
 }
 /*
