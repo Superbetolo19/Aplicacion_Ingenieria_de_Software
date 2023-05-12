@@ -1,3 +1,5 @@
+package ingenieria_caja_registradora;
+
 
 
 import java.io.File;
@@ -15,7 +17,7 @@ public class ConexionBase {
         //RUTA URL DE LA BASE DE DATOS
         String Host = "localhost";
         String Puerto = "3306";
-        String BaseData = "ingenieriadesoftware";
+        String BaseData = "sistemapuntodeventa";
 
         //ACCEDER URL
         String User = "root";
@@ -38,7 +40,7 @@ public class ConexionBase {
 
     //METODO PARA PODER HACER LA CONEXION CON LA BASE DE DATOS Y MOSTRAR LA INFORMACION DE ESTA
     public ResultSet Visualizar() {
-        String sql = "select * from producto";
+        String sql = "select * from sistemapuntodeventa.producto";
         Connection Con = ConexionBase();
         ResultSet Rs = null;
         try {

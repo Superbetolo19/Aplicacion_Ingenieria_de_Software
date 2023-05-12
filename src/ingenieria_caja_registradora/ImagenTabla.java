@@ -1,3 +1,5 @@
+package ingenieria_caja_registradora;
+
 
 import java.awt.Component;
 import javax.swing.JLabel;

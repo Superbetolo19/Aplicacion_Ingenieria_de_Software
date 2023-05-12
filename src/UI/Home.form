@@ -865,7 +865,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="panel_menuOpciones" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="panel_Activida" max="32767" attributes="0"/>
+                  <Component id="panel_Actividad" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
@@ -884,7 +884,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="panel_menuOpciones" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="panel_Activida" max="32767" attributes="0"/>
+                          <Component id="panel_Actividad" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -1063,7 +1063,7 @@
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="panel_Activida">
+        <Container class="javax.swing.JPanel" name="panel_Actividad">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
@@ -1517,7 +1517,7 @@
                               <Component id="jPanel4" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="bt_ReturnPanelAdmin1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="526" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="522" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -1531,7 +1531,7 @@
                           <Component id="bt_ReturnPanelAdmin1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="37" max="32767" attributes="0"/>
+                          <EmptySpace pref="33" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1609,7 +1609,7 @@
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="194" max="32767" attributes="0"/>
+                              <EmptySpace pref="190" max="32767" attributes="0"/>
                               <Component id="bt_AgregarProductoNuevo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
                           </Group>

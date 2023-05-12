@@ -1,8 +1,10 @@
 package UI;
 
+import ingenieria_caja_registradora.ConexionBase;
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,11 +16,12 @@ import javax.swing.JPanel;
  * @author Kirby
  */
 public class Home extends javax.swing.JFrame {
-
+    private ConexionBase conSQL;
     /**
      * Creates new form Home
      */
     public Home() {
+        this.conSQL = new ConexionBase();
         initComponents();
         this.setLocationRelativeTo(null);
         //panelVenta.setVisible(false);
@@ -83,7 +86,7 @@ public class Home extends javax.swing.JFrame {
         icon_Clientes = new javax.swing.JLabel();
         bt_CorteCaja = new javax.swing.JPanel();
         icon_CorteCaja = new javax.swing.JLabel();
-        panel_Activida = new javax.swing.JPanel();
+        panel_Actividad = new javax.swing.JPanel();
         panel_Admin_ProductosOpcion = new javax.swing.JPanel();
         bt_AgregarProducto = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -744,8 +747,8 @@ public class Home extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        panel_Activida.setBackground(java.awt.Color.darkGray);
-        panel_Activida.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        panel_Actividad.setBackground(java.awt.Color.darkGray);
+        panel_Actividad.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
 
         panel_Admin_ProductosOpcion.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -1103,7 +1106,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(tf_Nombre))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(194, Short.MAX_VALUE)
+                .addContainerGap(190, Short.MAX_VALUE)
                 .addComponent(bt_AgregarProductoNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(178, 178, 178))
         );
@@ -1145,7 +1148,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panel_FormProductoLayout.createSequentialGroup()
                         .addComponent(bt_ReturnPanelAdmin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 526, Short.MAX_VALUE)))
+                        .addGap(0, 522, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panel_FormProductoLayout.setVerticalGroup(
@@ -1155,41 +1158,41 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(bt_ReturnPanelAdmin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout panel_ActividaLayout = new javax.swing.GroupLayout(panel_Activida);
-        panel_Activida.setLayout(panel_ActividaLayout);
-        panel_ActividaLayout.setHorizontalGroup(
-            panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_ActividaLayout.createSequentialGroup()
+        javax.swing.GroupLayout panel_ActividadLayout = new javax.swing.GroupLayout(panel_Actividad);
+        panel_Actividad.setLayout(panel_ActividadLayout);
+        panel_ActividadLayout.setHorizontalGroup(
+            panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_ActividadLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panel_Admin_ProductosOpcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_ActividaLayout.createSequentialGroup()
+            .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 574, Short.MAX_VALUE)
                     .addContainerGap()))
-            .addGroup(panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_ActividaLayout.createSequentialGroup()
+            .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, 574, Short.MAX_VALUE)
                     .addContainerGap()))
         );
-        panel_ActividaLayout.setVerticalGroup(
-            panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_ActividaLayout.createSequentialGroup()
+        panel_ActividadLayout.setVerticalGroup(
+            panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_ActividadLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panel_Admin_ProductosOpcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_ActividaLayout.createSequentialGroup()
+            .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
                     .addContainerGap()))
-            .addGroup(panel_ActividaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_ActividaLayout.createSequentialGroup()
+            .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
                     .addContainerGap()))
@@ -1234,7 +1237,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(panel_AdminLayout.createSequentialGroup()
                 .addComponent(panel_menuOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel_Activida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_Actividad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(panel_AdminLayout.createSequentialGroup()
                 .addContainerGap()
@@ -1250,7 +1253,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(panel_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panel_menuOpciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panel_AdminLayout.createSequentialGroup()
-                        .addComponent(panel_Activida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panel_Actividad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
 
@@ -1612,7 +1615,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel panelProductos;
     private javax.swing.JPanel panelSumaCostos;
     private javax.swing.JPanel panelVenta;
-    private javax.swing.JPanel panel_Activida;
+    private javax.swing.JPanel panel_Actividad;
     private javax.swing.JPanel panel_Admin;
     private javax.swing.JPanel panel_Admin_ProductosOpcion;
     private javax.swing.JPanel panel_FormProducto;

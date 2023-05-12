@@ -1,3 +1,7 @@
+package UI;
+
+import ingenieria_caja_registradora.ConexionBase;
+import ingenieria_caja_registradora.ImagenTabla;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -59,7 +63,6 @@ public class PantallaCarga1 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(500, 700));
         setResizable(false);
 
         jPanel2.setEnabled(false);
