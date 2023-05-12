@@ -13,7 +13,7 @@ import java.awt.Color;
  * @author Kirby
  */
 public class Login extends javax.swing.JFrame {
-
+    private Home h;
     private String nombre;
     private String correo;
     /**
@@ -22,7 +22,9 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         nombre = "";
         correo = "";
+        h = new Home();
         
+        h = new Home();
         initComponents();
         panel_loginEncargado.setVisible(false);
         panel_loginAdmin.setVisible(false);
@@ -562,10 +564,9 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
         this.setVisible(false);
+        h.getbtMenu().setVisible(false);
         h.setVisible(true);
-        h.bt_Menu.setVisible(false);
     }//GEN-LAST:event_panel_EntrarEncargadoMouseClicked
 
     private void tf_CorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CorreoActionPerformed
@@ -578,7 +579,6 @@ public class Login extends javax.swing.JFrame {
 
     private void panel_EntrarAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarAdminMouseClicked
         // TODO add your handling code here:
-        Home h = new Home();
         this.setVisible(false);
         h.setVisible(true);
     }//GEN-LAST:event_panel_EntrarAdminMouseClicked
@@ -648,6 +648,7 @@ public class Login extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
+                
             }
         });
     }
