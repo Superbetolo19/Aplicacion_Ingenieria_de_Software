@@ -1,5 +1,5 @@
 
-import com.mysql.cj.jdbc.Blob;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.Connection;
