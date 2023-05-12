@@ -1025,30 +1025,42 @@ public class Home extends javax.swing.JFrame {
         );
 
         jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lab_Nombre.setForeground(new java.awt.Color(255, 255, 255));
         lab_Nombre.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Nombre.setText("Nombre");
+        jPanel4.add(lab_Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 9, 170, -1));
 
         lab_Descripcion.setForeground(new java.awt.Color(255, 255, 255));
         lab_Descripcion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Descripcion.setText("Descipcion");
+        jPanel4.add(lab_Descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 46, 170, -1));
+        jPanel4.add(tf_Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 6, 188, -1));
 
         jTextArea1.setColumns(15);
         jTextArea1.setRows(4);
         ta_Descripcion.setViewportView(jTextArea1);
 
+        jPanel4.add(ta_Descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 46, 188, -1));
+        jPanel4.add(tf_Precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 134, 188, -1));
+
         lab_Precio.setForeground(new java.awt.Color(255, 255, 255));
         lab_Precio.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Precio.setText("Precio");
+        jPanel4.add(lab_Precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 137, 170, -1));
+        jPanel4.add(tf_Cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 174, 188, -1));
+        jPanel4.add(tf_Id, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 214, 188, -1));
 
         lab_Cantidad.setForeground(new java.awt.Color(255, 255, 255));
         lab_Cantidad.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Cantidad.setText("Cantidad");
+        jPanel4.add(lab_Cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 177, 170, -1));
 
         lab_Id.setForeground(new java.awt.Color(255, 255, 255));
         lab_Id.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lab_Id.setText("Id");
+        jPanel4.add(lab_Id, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 217, 170, -1));
 
         bt_AgregarProductoNuevo.setBackground(java.awt.Color.darkGray);
 
@@ -1082,58 +1094,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lab_Nombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lab_Descripcion, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                    .addComponent(lab_Precio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lab_Cantidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lab_Id, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tf_Precio, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
-                    .addComponent(tf_Id)
-                    .addComponent(tf_Cantidad)
-                    .addComponent(ta_Descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(tf_Nombre))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(194, Short.MAX_VALUE)
-                .addComponent(bt_AgregarProductoNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(178, 178, 178))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lab_Nombre)
-                    .addComponent(tf_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lab_Descripcion)
-                    .addComponent(ta_Descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_Precio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_Precio))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_Cantidad))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_Id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_Id))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                .addComponent(bt_AgregarProductoNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
+        jPanel4.add(bt_AgregarProductoNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 287, -1, -1));
 
         javax.swing.GroupLayout panel_FormProductoLayout = new javax.swing.GroupLayout(panel_FormProducto);
         panel_FormProducto.setLayout(panel_FormProductoLayout);
