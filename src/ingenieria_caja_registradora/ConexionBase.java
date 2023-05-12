@@ -57,7 +57,7 @@ public class ConexionBase {
     public void GuardarInformacion(String nombre, String Descripcion, float Precio, int Cantidad, int Id) {
         Connection Con = ConexionBase();
         String sql = "insert into producto(Nombre,Descripcion,Precio,Precio,Id) values(?,?,?,?,?)";
-        //FileInputStream Fi = null;
+        FileInputStream Fi = null;
         PreparedStatement Ps = null;
         try {
             Ps = Con.prepareStatement(sql);

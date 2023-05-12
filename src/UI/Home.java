@@ -1693,9 +1693,9 @@ public class Home extends javax.swing.JFrame {
                
                 producto[0] = Rs.getString("Nombre");
                 producto[1] = Rs.getString("Descripcion");
-                producto[2] = Rs.getInt("Cantidad");
+                producto[2] = Rs.getFloat("Precio");
                 producto[3] = Rs.getInt("Id");
-                producto[4] = Rs.getFloat("Precio");
+                producto[4] = Rs.getInt("Cantidad");
 
                 Modelo.addRow(producto);
             }
