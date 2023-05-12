@@ -30,6 +30,7 @@ public class ConexionBase {
         String DataBaseURL = "jdbc:mysql://" + Host + ":" + Puerto + "/" + BaseData;
 
         try {
+            System.out.println("entra");
             Class.forName(Driver);
             ConexionSQL = DriverManager.getConnection(DataBaseURL, User, Password);
         } catch (Exception e) {
@@ -40,7 +41,7 @@ public class ConexionBase {
 
     //METODO PARA PODER HACER LA CONEXION CON LA BASE DE DATOS Y MOSTRAR LA INFORMACION DE ESTA
     public ResultSet Visualizar() {
-        String sql = "select * from sistemapuntodeventa.producto";
+        String sql = "select * from productos";
         Connection Con = ConexionBase();
         ResultSet Rs = null;
         try {
