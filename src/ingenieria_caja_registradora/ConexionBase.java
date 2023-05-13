@@ -1,3 +1,5 @@
+package ingenieria_caja_registradora;
+
 
 
 import java.io.File;

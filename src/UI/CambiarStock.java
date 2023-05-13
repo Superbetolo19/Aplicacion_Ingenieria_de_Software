@@ -35,7 +35,6 @@ public class CambiarStock extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(400, 200));
         setMinimumSize(new java.awt.Dimension(100, 100));
-        setPreferredSize(new java.awt.Dimension(400, 200));
         setResizable(false);
 
         panel_CambiarStock.setBackground(new java.awt.Color(51, 51, 51));

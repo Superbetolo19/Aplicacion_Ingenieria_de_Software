@@ -132,6 +132,22 @@ public class Home extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        tf_NombreAC1 = new javax.swing.JTextField();
+        tf_NombreAC2 = new javax.swing.JTextField();
+        tf_NombreAC3 = new javax.swing.JTextField();
+        tf_NombreAC4 = new javax.swing.JTextField();
+        tf_NombreAC5 = new javax.swing.JTextField();
+        tf_NombreAC6 = new javax.swing.JTextField();
+        tf_NombreAC7 = new javax.swing.JTextField();
+        pane_AgregarAC1 = new javax.swing.JPanel();
+        lab_AgregarAC1 = new javax.swing.JLabel();
         panel_AgregarCliente = new javax.swing.JPanel();
         lab_NombreAC = new javax.swing.JLabel();
         lab_TelefonoAC = new javax.swing.JLabel();
@@ -150,6 +166,22 @@ public class Home extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        tf_NombreAC8 = new javax.swing.JTextField();
+        tf_NombreAC9 = new javax.swing.JTextField();
+        tf_NombreAC10 = new javax.swing.JTextField();
+        tf_NombreAC11 = new javax.swing.JTextField();
+        tf_NombreAC12 = new javax.swing.JTextField();
+        tf_NombreAC13 = new javax.swing.JTextField();
+        tf_NombreAC14 = new javax.swing.JTextField();
+        pane_AgregarAC2 = new javax.swing.JPanel();
+        lab_AgregarAC2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
@@ -1343,21 +1375,155 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Nombre");
+
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Correo");
+
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Telefono");
+
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("Credito Disponible");
+
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("ID");
+
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Deuda");
+
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Saldo Disponible");
+
+        tf_NombreAC1.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC2.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC3.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC4.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC5.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC6.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC7.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        pane_AgregarAC1.setBackground(java.awt.Color.darkGray);
+        pane_AgregarAC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseExited(evt);
+            }
+        });
+
+        lab_AgregarAC1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lab_AgregarAC1.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarAC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarAC1.setText("Guardar Cambios");
+
+        javax.swing.GroupLayout pane_AgregarAC1Layout = new javax.swing.GroupLayout(pane_AgregarAC1);
+        pane_AgregarAC1.setLayout(pane_AgregarAC1Layout);
+        pane_AgregarAC1Layout.setHorizontalGroup(
+            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pane_AgregarAC1Layout.setVerticalGroup(
+            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout panel_ModificarClienteConsentidoLayout = new javax.swing.GroupLayout(panel_ModificarClienteConsentido);
         panel_ModificarClienteConsentido.setLayout(panel_ModificarClienteConsentidoLayout);
         panel_ModificarClienteConsentidoLayout.setHorizontalGroup(
             panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel14)
+                            .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel13)
+                                .addComponent(jLabel15))
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18))
+                        .addGap(41, 41, 41)
+                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                .addGap(176, 176, 176)
+                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_ModificarClienteConsentidoLayout.setVerticalGroup(
             panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(392, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         panel_Clientes.add(panel_ModificarClienteConsentido, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, -1, -1));
@@ -1553,21 +1719,162 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Nombre");
+
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Correo");
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Telefono");
+
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("Credito Disponible");
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("ID");
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Deuda");
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Saldo Disponible");
+
+        tf_NombreAC8.setEditable(false);
+        tf_NombreAC8.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC9.setEditable(false);
+        tf_NombreAC9.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC10.setEditable(false);
+        tf_NombreAC10.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC11.setEditable(false);
+        tf_NombreAC11.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC12.setEditable(false);
+        tf_NombreAC12.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC13.setEditable(false);
+        tf_NombreAC13.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC14.setEditable(false);
+        tf_NombreAC14.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        pane_AgregarAC2.setBackground(java.awt.Color.darkGray);
+        pane_AgregarAC2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseExited(evt);
+            }
+        });
+
+        lab_AgregarAC2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lab_AgregarAC2.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarAC2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarAC2.setText("Eliminar Cliente Consentido");
+
+        javax.swing.GroupLayout pane_AgregarAC2Layout = new javax.swing.GroupLayout(pane_AgregarAC2);
+        pane_AgregarAC2.setLayout(pane_AgregarAC2Layout);
+        pane_AgregarAC2Layout.setHorizontalGroup(
+            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pane_AgregarAC2Layout.setVerticalGroup(
+            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout panel_EliminarClienteLayout = new javax.swing.GroupLayout(panel_EliminarCliente);
         panel_EliminarCliente.setLayout(panel_EliminarClienteLayout);
         panel_EliminarClienteLayout.setHorizontalGroup(
             panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel24)
+                            .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel22)
+                                .addComponent(jLabel21)
+                                .addComponent(jLabel20))
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel26))
+                        .addGap(59, 59, 59)
+                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_EliminarClienteLayout.setVerticalGroup(
             panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(435, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         panel_Clientes.add(panel_EliminarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 15, -1, 490));
@@ -1828,6 +2135,30 @@ public class Home extends javax.swing.JFrame {
         panel_EliminarCliente.setVisible(true);
     }//GEN-LAST:event_bt_EliminarClienteMouseClicked
 
+    private void pane_AgregarAC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC1MouseClicked
+
+    private void pane_AgregarAC1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC1MouseEntered
+
+    private void pane_AgregarAC1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC1MouseExited
+
+    private void pane_AgregarAC2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC2MouseClicked
+
+    private void pane_AgregarAC2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC2MouseEntered
+
+    private void pane_AgregarAC2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pane_AgregarAC2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pane_AgregarAC2MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -1902,7 +2233,21 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1935,6 +2280,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JLabel labTotal;
     private javax.swing.JLabel lab_AgregarAC;
+    private javax.swing.JLabel lab_AgregarAC1;
+    private javax.swing.JLabel lab_AgregarAC2;
     private javax.swing.JLabel lab_AgregarCliente;
     private javax.swing.JLabel lab_CorreoAC;
     private javax.swing.JLabel lab_CreditoAC;
@@ -1947,6 +2294,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lab_TelefonoAC;
     private javax.swing.JLabel listaVacia;
     private javax.swing.JPanel pane_AgregarAC;
+    private javax.swing.JPanel pane_AgregarAC1;
+    private javax.swing.JPanel pane_AgregarAC2;
     private javax.swing.JPanel panelEditArticulos;
     private javax.swing.JPanel panelEditCompra;
     private javax.swing.JPanel panelLista;
@@ -1971,6 +2320,20 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField tf_CreditoAC;
     private javax.swing.JTextField tf_IDAC;
     private javax.swing.JTextField tf_NombreAC;
+    private javax.swing.JTextField tf_NombreAC1;
+    private javax.swing.JTextField tf_NombreAC10;
+    private javax.swing.JTextField tf_NombreAC11;
+    private javax.swing.JTextField tf_NombreAC12;
+    private javax.swing.JTextField tf_NombreAC13;
+    private javax.swing.JTextField tf_NombreAC14;
+    private javax.swing.JTextField tf_NombreAC2;
+    private javax.swing.JTextField tf_NombreAC3;
+    private javax.swing.JTextField tf_NombreAC4;
+    private javax.swing.JTextField tf_NombreAC5;
+    private javax.swing.JTextField tf_NombreAC6;
+    private javax.swing.JTextField tf_NombreAC7;
+    private javax.swing.JTextField tf_NombreAC8;
+    private javax.swing.JTextField tf_NombreAC9;
     private javax.swing.JTextField tf_TelefonoAC;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
