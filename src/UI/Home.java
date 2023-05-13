@@ -127,13 +127,13 @@ public class Home extends javax.swing.JFrame {
         bt_EliminarCliente = new javax.swing.JPanel();
         lab_EliminarCliente = new javax.swing.JLabel();
         panel_FormProducto1 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        lab_NombreAC = new javax.swing.JLabel();
+        lab_TelefonoAC = new javax.swing.JLabel();
+        lab_CorreoAC = new javax.swing.JLabel();
+        lab_IDAC = new javax.swing.JLabel();
+        lab_CreditoAC = new javax.swing.JLabel();
+        tf_NombreAC = new javax.swing.JTextField();
+        tf_CorreoAC = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
@@ -1329,24 +1329,29 @@ public class Home extends javax.swing.JFrame {
         panel_FormProducto1.setForeground(new java.awt.Color(255, 255, 255));
         panel_FormProducto1.setPreferredSize(new java.awt.Dimension(570, 447));
 
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("Nombre");
+        lab_NombreAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_NombreAC.setText("Nombre");
 
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("Telefono");
+        lab_TelefonoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_TelefonoAC.setText("Telefono");
 
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Correo");
+        lab_CorreoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_CorreoAC.setText("Correo");
 
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("ID del Cliente");
+        lab_IDAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_IDAC.setText("ID del Cliente");
 
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("Credito Asignado");
+        lab_CreditoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_CreditoAC.setText("Credito Asignado");
 
-        jTextField7.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC.setBackground(new java.awt.Color(51, 51, 51));
 
-        jTextField8.setBackground(new java.awt.Color(51, 51, 51));
+        tf_CorreoAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_CorreoAC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CorreoACActionPerformed(evt);
+            }
+        });
 
         jTextField9.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -1385,52 +1390,55 @@ public class Home extends javax.swing.JFrame {
             .addGroup(panel_FormProducto1Layout.createSequentialGroup()
                 .addContainerGap(87, Short.MAX_VALUE)
                 .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_FormProducto1Layout.createSequentialGroup()
-                        .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel19))
-                        .addGap(37, 37, 37)
-                        .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(lab_NombreAC)
+                    .addComponent(lab_IDAC)
+                    .addComponent(lab_CorreoAC)
+                    .addComponent(lab_TelefonoAC)
+                    .addComponent(lab_CreditoAC))
+                .addGap(35, 35, 35)
+                .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_FormProducto1Layout.createSequentialGroup()
+                        .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jTextField10)
+                                .addComponent(jTextField9)
+                                .addComponent(tf_CorreoAC))
                             .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(118, 118, 118))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_FormProducto1Layout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(183, 183, 183))))
+                        .addGap(120, 120, 120))
+                    .addGroup(panel_FormProducto1Layout.createSequentialGroup()
+                        .addComponent(tf_NombreAC, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
+            .addGroup(panel_FormProducto1Layout.createSequentialGroup()
+                .addGap(178, 178, 178)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         panel_FormProducto1Layout.setVerticalGroup(
             panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_FormProducto1Layout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lab_NombreAC)
+                    .addComponent(tf_NombreAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lab_TelefonoAC)
+                    .addComponent(jTextField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_CorreoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_CorreoAC))
                 .addGap(18, 18, 18)
                 .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_IDAC))
                 .addGap(18, 18, 18)
                 .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17))
-                .addGap(18, 18, 18)
-                .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18))
-                .addGap(18, 18, 18)
-                .addGroup(panel_FormProducto1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
-                .addGap(91, 91, 91)
+                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_CreditoAC))
+                .addGap(65, 65, 65)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panel_ClientesLayout = new javax.swing.GroupLayout(panel_Clientes);
@@ -1661,6 +1669,10 @@ public class Home extends javax.swing.JFrame {
         panel_Clientes.setVisible(true);
     }//GEN-LAST:event_bt_ClientesMouseClicked
 
+    private void tf_CorreoACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CorreoACActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CorreoACActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1734,11 +1746,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
@@ -1771,15 +1778,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel labTotal;
     private javax.swing.JLabel lab_AgregarCliente;
+    private javax.swing.JLabel lab_CorreoAC;
+    private javax.swing.JLabel lab_CreditoAC;
     private javax.swing.JLabel lab_EliminarCliente;
+    private javax.swing.JLabel lab_IDAC;
     private javax.swing.JLabel lab_Impuestos;
     private javax.swing.JLabel lab_ModificarCliente;
+    private javax.swing.JLabel lab_NombreAC;
     private javax.swing.JLabel lab_SubTotal;
+    private javax.swing.JLabel lab_TelefonoAC;
     private javax.swing.JLabel listaVacia;
     private javax.swing.JPanel panelEditArticulos;
     private javax.swing.JPanel panelEditCompra;
@@ -1800,6 +1810,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel panel_menuOpciones;
     private javax.swing.JLabel subTotal;
     private javax.swing.JTextField tf_BuscarProducto;
+    private javax.swing.JTextField tf_CorreoAC;
+    private javax.swing.JTextField tf_NombreAC;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
