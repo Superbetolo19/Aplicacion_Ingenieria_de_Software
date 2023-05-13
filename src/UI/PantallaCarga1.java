@@ -410,7 +410,7 @@ public class PantallaCarga1 extends javax.swing.JFrame {
             if (Imagen == null || Des.equals("") || Cant.equals("") || Id.equals("") || Precio.equals("")) {
                 JOptionPane.showMessageDialog(null, "Ingresa los datos que faltan");
             } else {
-                CB.GuardarInformacion(Ruta, Des, Integer.valueOf(Cant), Integer.valueOf(Id), Float.valueOf(Precio));
+                CB.GuardarInformacion(Ruta, "si", Des, Integer.valueOf(Cant), Integer.valueOf(Id), Float.valueOf(Precio));
                 JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
                 LimpiaTabla();
             }
@@ -438,7 +438,7 @@ public class PantallaCarga1 extends javax.swing.JFrame {
             if (Imagen == null || Des.equals("") || Cant.equals("") || Precio.equals("")) {
                 JOptionPane.showMessageDialog(null, "Ingresa los datos que faltan");
             } else {
-                CB.ModificarInformacion(Ruta, Des, Integer.valueOf(Cant), Idc, Float.valueOf(Precio));
+//                CB.ModificarInformacion(Ruta, Des, Integer.valueOf(Cant), Idc, Float.valueOf(Precio));
                 JOptionPane.showMessageDialog(null, "Datos cambiados correctamente");
                 LimpiaTabla();
             }

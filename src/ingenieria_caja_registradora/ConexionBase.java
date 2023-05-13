@@ -54,7 +54,7 @@ public class ConexionBase {
     }
 
     //METODO PARA AGREGAR INFORMACION A LA BASE DE DATOS
-    public void GuardarInformacion(String Ruta, String Descripcion, int Cantidad, int Id, float Precio) {
+    public void GuardarInformacion(String Ruta, String nombre, String Descripcion, int Cantidad, int Id, float Precio) {
         Connection Con = ConexionBase();
         String sql = "insert into producto(Imagen,Descripcion,Cantidad,Id,Precio) values(?,?,?,?,?)";
         FileInputStream Fi = null;
@@ -65,15 +65,11 @@ public class ConexionBase {
 
             Ps = Con.prepareStatement(sql);
             Ps.setBinaryStream(1, Fi);
-            System.out.println(Fi);
-            Ps.setString(2, Descripcion);
-            System.out.println(Descripcion);
-            Ps.setInt(3, Cantidad);
-            System.out.println(Cantidad);
-            Ps.setInt(4, Id);
-            System.out.println(Id);
+            Ps.setString(2, nombre);
+            Ps.setString(3, Descripcion);
+            Ps.setInt(4, Cantidad);
             Ps.setFloat(5, Precio);
-            System.out.println(Precio);
+            Ps.setInt(6, Id);
             Ps.executeUpdate();
         } catch (Exception e) {
             System.out.println("No se pudo guardar los datos");
@@ -81,7 +77,7 @@ public class ConexionBase {
     }
 
     //METODO PARA CAMBIAR ALGUNA INFORMACION DE LA BASE DE DATOS
-    public void ModificarInformacion(String Ruta, String Descripcion, int Cantidad, int Id, float Precio) {
+    public void ModificarInformacion(String Ruta, String nombre, String Descripcion, int Cantidad, int Id, float Precio) {
         Connection Con = ConexionBase();
         String sql = "Update producto set Imagen= ?, Descripcion= ?,Cantidad= ?,Id=?, Precio=? where Id=" + Id;
         FileInputStream Fi = null;
