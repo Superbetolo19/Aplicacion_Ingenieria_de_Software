@@ -1814,6 +1814,7 @@ public class Home extends javax.swing.JFrame {
         Conect = ConSQL.ConexionBase();
         ResultSet Rs = ConSQL.Visualizar();
         //System.out.println(jTable1.toString());
+        jTable1 = new JTable();
         jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
         try {
             Object[] producto = new Object[5];
