@@ -17,7 +17,8 @@ public class ConexionBase {
         //RUTA URL DE LA BASE DE DATOS
         String Host = "localhost";
         String Puerto = "3306";
-        String BaseData = "samuel";
+        String BaseData = "sistemapuntodeventa";
+        //String BaseData = "samuel";
 
         //ACCEDER URL
         String User = "root";
@@ -41,7 +42,7 @@ public class ConexionBase {
 
     //METODO PARA PODER HACER LA CONEXION CON LA BASE DE DATOS Y MOSTRAR LA INFORMACION DE ESTA
     public ResultSet Visualizar() {
-        String sql = "select * from producto";
+        String sql = "select * from productos";
         Connection Con = ConexionBase();
         ResultSet Rs = null;
         try {

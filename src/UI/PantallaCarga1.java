@@ -357,6 +357,7 @@ public class PantallaCarga1 extends javax.swing.JFrame {
     public void ConsultaBase() {
         Conect = ConSQL.ConexionBase();
         ResultSet Rs = ConSQL.Visualizar();
+        System.out.println(Rs);
 
         jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
         try {

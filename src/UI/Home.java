@@ -32,7 +32,8 @@ public class Home extends javax.swing.JFrame {
     Connection Conect;
     int Idc;
     String Ruta = "";
-
+    
+    
     DefaultTableModel Modelo;
     /**
      * Creates new form Home
@@ -41,6 +42,7 @@ public class Home extends javax.swing.JFrame {
         this.ConSQL = new ConexionBase();
         ConsultaBase();
         initComponents();
+        jTable1 = new JTable();
         this.setLocationRelativeTo(null);
         //panelVenta.setVisible(false);
         panel_menu.setVisible(false);
@@ -886,7 +888,7 @@ public class Home extends javax.swing.JFrame {
             bt_ModificarProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bt_ModificarProductoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 568, Short.MAX_VALUE)
                 .addContainerGap())
         );
         bt_ModificarProductoLayout.setVerticalGroup(
@@ -922,14 +924,14 @@ public class Home extends javax.swing.JFrame {
             bt_CambiarStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bt_CambiarStockLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 568, Short.MAX_VALUE)
                 .addContainerGap())
         );
         bt_CambiarStockLayout.setVerticalGroup(
             bt_CambiarStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bt_CambiarStockLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1813,40 +1815,47 @@ public class Home extends javax.swing.JFrame {
     public void ConsultaBase() {
         Conect = ConSQL.ConexionBase();
         ResultSet Rs = ConSQL.Visualizar();
-        //System.out.println(jTable1.toString());
-        jTable1 = new JTable();
-        jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
+        
+        
+        //jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
         try {
             Object[] producto = new Object[5];
+
             Modelo = (DefaultTableModel) jTable1.getModel();
             while (Rs.next()) {
-                Blob blob = Rs.getBlob("Imagen");
-                if (blob != null) {
-                    try {
-                        byte[] data = blob.getBytes(1, (int) blob.length());
-                        BufferedImage Img = null;
-                        try {
-                            Img = ImageIO.read(new ByteArrayInputStream(data));
-                        } catch (Exception e) {
-                        }
-                        ImageIcon Icon = new ImageIcon(Img.getScaledInstance(100, 100, 0));
-                        producto[0] = new JLabel(Icon);
+//                Blob blob = Rs.getBlob("Imagen");
+//                if (blob != null) {
+//                    try {
+//                        byte[] data = blob.getBytes(1, (int) blob.length());
+//                        BufferedImage Img = null;
+//                        try {
+//                            Img = ImageIO.read(new ByteArrayInputStream(data));
+//                        } catch (Exception e) {
+//                        }
+//                        ImageIcon Icon = new ImageIcon(Img.getScaledInstance(100, 100, 0));
+////                        producto[0] = new JLabel(Icon);
+////                        producto[1] = Rs.getString("Descripcion");
+////                        producto[2] = Rs.getInt("Cantidad");
+////                        producto[3] = Rs.getInt("Id");
+////                        producto[4] = Rs.getFloat("Precio");
+//                    } catch (Exception e) {
+//                        producto[0] = "No imagen";
+//                    }
+//
+//                } else {
+//                    producto[0] = "No imagen";
+//                }
+                
+                        producto[0] = Rs.getString("Nombre");
                         producto[1] = Rs.getString("Descripcion");
                         producto[2] = Rs.getInt("Cantidad");
                         producto[3] = Rs.getInt("Id");
                         producto[4] = Rs.getFloat("Precio");
-                    } catch (Exception e) {
-                        producto[0] = "No imagen";
-                    }
-
-                } else {
-                    producto[0] = "No imagen";
-                }
 
                 Modelo.addRow(producto);
             }
             jTable1.setModel(Modelo);
-            jTable1.setRowHeight(100);
+            jTable1.setRowHeight(20);
 
         } catch (Exception e) {
             System.out.println("Error para mostrar Datos");
