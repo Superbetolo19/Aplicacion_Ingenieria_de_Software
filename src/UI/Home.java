@@ -1813,7 +1813,7 @@ public class Home extends javax.swing.JFrame {
     public void ConsultaBase() {
         Conect = ConSQL.ConexionBase();
         ResultSet Rs = ConSQL.Visualizar();
-        System.out.println(jTable1.toString());
+        //System.out.println(jTable1.toString());
         jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
         try {
             Object[] producto = new Object[5];
