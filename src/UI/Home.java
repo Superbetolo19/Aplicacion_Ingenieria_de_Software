@@ -17,15 +17,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTable;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import java.lang.String;
 
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 
 /**
  *
@@ -125,12 +121,12 @@ public class Home extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         bt_ReturnPanelAdmin2 = new javax.swing.JPanel();
         icon_ReturnPanelAdmin2 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         panel_FormProducto = new javax.swing.JPanel();
         bt_ReturnPanelAdmin1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -854,7 +850,7 @@ public class Home extends javax.swing.JFrame {
             bt_AgregarProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bt_AgregarProductoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 548, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 568, Short.MAX_VALUE)
                 .addContainerGap())
         );
         bt_AgregarProductoLayout.setVerticalGroup(
@@ -933,7 +929,7 @@ public class Home extends javax.swing.JFrame {
             bt_CambiarStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bt_CambiarStockLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1050,28 +1046,6 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTable1.setBackground(new java.awt.Color(51, 51, 51));
-        jTable1.setForeground(new java.awt.Color(255, 255, 255));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "Nombre", "Descripción", "Cantidad", "Precio", "Title 5"
-            }
-        ));
-        jTable1.setSelectionForeground(new java.awt.Color(0, 153, 255));
-        jTable1.setShowGrid(true);
-        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTable1MouseClicked(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTable1);
-
         jPanel4.setBackground(java.awt.Color.darkGray);
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -1084,7 +1058,7 @@ public class Home extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -1107,7 +1081,7 @@ public class Home extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -1118,6 +1092,29 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Imagen", "Descripcion", "Cantidad", "ID", "Precio"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Long.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(jTable1);
+
         javax.swing.GroupLayout panel_ModificarproductoLayout = new javax.swing.GroupLayout(panel_Modificarproducto);
         panel_Modificarproducto.setLayout(panel_ModificarproductoLayout);
         panel_ModificarproductoLayout.setHorizontalGroup(
@@ -1125,12 +1122,12 @@ public class Home extends javax.swing.JFrame {
             .addGroup(panel_ModificarproductoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_ModificarproductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panel_ModificarproductoLayout.createSequentialGroup()
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_ModificarproductoLayout.createSequentialGroup()
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         panel_ModificarproductoLayout.setVerticalGroup(
@@ -1139,11 +1136,11 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panel_ModificarproductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -1393,12 +1390,12 @@ public class Home extends javax.swing.JFrame {
             .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 574, Short.MAX_VALUE)
+                    .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
                     .addContainerGap()))
             .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         panel_ActividadLayout.setVerticalGroup(
@@ -1410,12 +1407,12 @@ public class Home extends javax.swing.JFrame {
             .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
+                    .addComponent(panel_FormProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
                     .addContainerGap()))
             .addGroup(panel_ActividadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_ActividadLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_Modificarproducto, javax.swing.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
                     .addContainerGap()))
         );
 
@@ -1766,14 +1763,12 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "No se selecciono nada");
         } else {
             JLabel ImagenTabla = (JLabel) jTable1.getValueAt(Fila, 0);
-            String nombre = (String) jTable1.getValueAt(Fila, 1);
-            String Descripcion = (String) jTable1.getValueAt(Fila, 2);
-            int Cantidad = Integer.parseInt((String) jTable1.getValueAt(Fila, 3).toString());
-            Idc = Integer.parseInt((String) jTable1.getValueAt(Fila, 4).toString());
-            float Precio = Float.parseFloat((String) jTable1.getValueAt(Fila, 5).toString());
+            String Descripcion = (String) jTable1.getValueAt(Fila, 1);
+            int Cantidad = Integer.parseInt((String) jTable1.getValueAt(Fila, 2).toString());
+            Idc = Integer.parseInt((String) jTable1.getValueAt(Fila, 3).toString());
+            float Precio = Float.parseFloat((String) jTable1.getValueAt(Fila, 4).toString());
 
-            //icon_ImagenProducto.setIcon(ImagenTabla.getIcon());
-            tf_Nombre.setText("" + nombre);
+            icon_ImagenProducto.setIcon(ImagenTabla.getIcon());
             jTextArea1.setText(Descripcion);
             tf_Cantidad.setText("" + Cantidad);
             tf_Id.setText("" + Idc);
@@ -1818,8 +1813,8 @@ public class Home extends javax.swing.JFrame {
     public void ConsultaBase() {
         Conect = ConSQL.ConexionBase();
         ResultSet Rs = ConSQL.Visualizar();
-
-        //jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
+        System.out.println(jTable1.toString());
+        jTable1.setDefaultRenderer(Object.class, new ImagenTabla());
         try {
             Object[] producto = new Object[5];
             Modelo = (DefaultTableModel) jTable1.getModel();
@@ -1985,7 +1980,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;

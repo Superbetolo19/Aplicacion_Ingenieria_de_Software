@@ -569,9 +569,9 @@ public class Login extends javax.swing.JFrame {
     private void panel_EntrarEncargadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_EntrarEncargadoMouseClicked
         // TODO add your handling code here:
         String usuario= tf_Usuario.getText();
-        char[] contraseña=passfield_Contraseña.getPassword();
-        String nombre= s.getEncargado().getNombre();
-        String pass= new String(contraseña);
+        char[] contraseña = passfield_Contraseña.getPassword();
+        String nombre = s.getEncargado().getNombre();
+        String pass = new String(contraseña);
         String contra="32353";
         if(nombre.equals(usuario)&&pass.equals(contra)){
             this.setVisible(false);
