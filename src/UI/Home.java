@@ -33,6 +33,7 @@ public class Home extends javax.swing.JFrame {
         panel_Clientes.setVisible(false);
         panel_ModificarClienteConsentido.setVisible(false);
         panel_AgregarCliente.setVisible(false);
+        panel_EliminarCliente.setVisible(false);
         panel_Admin_ProductosOpcion.setVisible(false);
     }
 
@@ -90,6 +91,69 @@ public class Home extends javax.swing.JFrame {
         icon_Clientes = new javax.swing.JLabel();
         bt_Corte = new javax.swing.JPanel();
         icon_Corte = new javax.swing.JLabel();
+        panel_Clientes = new javax.swing.JPanel();
+        panel_Admin_Clientes = new javax.swing.JPanel();
+        bt_AgregarCliente = new javax.swing.JPanel();
+        lab_AgregarCliente = new javax.swing.JLabel();
+        bt_ModificarCliente = new javax.swing.JPanel();
+        lab_ModificarCliente = new javax.swing.JLabel();
+        bt_EliminarCliente = new javax.swing.JPanel();
+        lab_EliminarCliente = new javax.swing.JLabel();
+        panel_AgregarCliente = new javax.swing.JPanel();
+        lab_NombreAC = new javax.swing.JLabel();
+        lab_TelefonoAC = new javax.swing.JLabel();
+        lab_CorreoAC = new javax.swing.JLabel();
+        lab_IDAC = new javax.swing.JLabel();
+        lab_CreditoAC = new javax.swing.JLabel();
+        tf_NombreAC = new javax.swing.JTextField();
+        tf_TelefonoAC = new javax.swing.JTextField();
+        tf_CorreoAC = new javax.swing.JTextField();
+        tf_IDAC = new javax.swing.JTextField();
+        tf_CreditoAC = new javax.swing.JTextField();
+        pane_AgregarAC = new javax.swing.JPanel();
+        lab_AgregarAC = new javax.swing.JLabel();
+        panel_ModificarClienteConsentido = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jTextField6 = new javax.swing.JTextField();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        tf_NombreAC1 = new javax.swing.JTextField();
+        tf_NombreAC2 = new javax.swing.JTextField();
+        tf_NombreAC3 = new javax.swing.JTextField();
+        tf_NombreAC4 = new javax.swing.JTextField();
+        tf_NombreAC5 = new javax.swing.JTextField();
+        tf_NombreAC6 = new javax.swing.JTextField();
+        tf_NombreAC7 = new javax.swing.JTextField();
+        pane_AgregarAC1 = new javax.swing.JPanel();
+        lab_AgregarAC1 = new javax.swing.JLabel();
+        panel_EliminarCliente = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jTextField7 = new javax.swing.JTextField();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        tf_NombreAC8 = new javax.swing.JTextField();
+        tf_NombreAC9 = new javax.swing.JTextField();
+        tf_NombreAC10 = new javax.swing.JTextField();
+        tf_NombreAC11 = new javax.swing.JTextField();
+        tf_NombreAC12 = new javax.swing.JTextField();
+        tf_NombreAC13 = new javax.swing.JTextField();
+        tf_NombreAC14 = new javax.swing.JTextField();
+        pane_AgregarAC2 = new javax.swing.JPanel();
+        lab_AgregarAC2 = new javax.swing.JLabel();
         panel_Activida = new javax.swing.JPanel();
         panel_Modificarproducto = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -119,69 +183,6 @@ public class Home extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         bt_VolverPanelVenta = new javax.swing.JPanel();
         icon_VolverPanelVenta = new javax.swing.JLabel();
-        panel_Clientes = new javax.swing.JPanel();
-        panel_Admin_Clientes = new javax.swing.JPanel();
-        bt_AgregarCliente = new javax.swing.JPanel();
-        lab_AgregarCliente = new javax.swing.JLabel();
-        bt_ModificarCliente = new javax.swing.JPanel();
-        lab_ModificarCliente = new javax.swing.JLabel();
-        bt_EliminarCliente = new javax.swing.JPanel();
-        lab_EliminarCliente = new javax.swing.JLabel();
-        panel_ModificarClienteConsentido = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jTextField6 = new javax.swing.JTextField();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        tf_NombreAC1 = new javax.swing.JTextField();
-        tf_NombreAC2 = new javax.swing.JTextField();
-        tf_NombreAC3 = new javax.swing.JTextField();
-        tf_NombreAC4 = new javax.swing.JTextField();
-        tf_NombreAC5 = new javax.swing.JTextField();
-        tf_NombreAC6 = new javax.swing.JTextField();
-        tf_NombreAC7 = new javax.swing.JTextField();
-        pane_AgregarAC1 = new javax.swing.JPanel();
-        lab_AgregarAC1 = new javax.swing.JLabel();
-        panel_AgregarCliente = new javax.swing.JPanel();
-        lab_NombreAC = new javax.swing.JLabel();
-        lab_TelefonoAC = new javax.swing.JLabel();
-        lab_CorreoAC = new javax.swing.JLabel();
-        lab_IDAC = new javax.swing.JLabel();
-        lab_CreditoAC = new javax.swing.JLabel();
-        tf_NombreAC = new javax.swing.JTextField();
-        tf_TelefonoAC = new javax.swing.JTextField();
-        tf_CorreoAC = new javax.swing.JTextField();
-        tf_IDAC = new javax.swing.JTextField();
-        tf_CreditoAC = new javax.swing.JTextField();
-        pane_AgregarAC = new javax.swing.JPanel();
-        lab_AgregarAC = new javax.swing.JLabel();
-        panel_EliminarCliente = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jTextField7 = new javax.swing.JTextField();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        tf_NombreAC8 = new javax.swing.JTextField();
-        tf_NombreAC9 = new javax.swing.JTextField();
-        tf_NombreAC10 = new javax.swing.JTextField();
-        tf_NombreAC11 = new javax.swing.JTextField();
-        tf_NombreAC12 = new javax.swing.JTextField();
-        tf_NombreAC13 = new javax.swing.JTextField();
-        tf_NombreAC14 = new javax.swing.JTextField();
-        pane_AgregarAC2 = new javax.swing.JPanel();
-        lab_AgregarAC2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
@@ -823,6 +824,701 @@ public class Home extends javax.swing.JFrame {
 
         panel_Admin.add(panel_menuOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 48, -1, 910));
 
+        panel_Clientes.setBackground(java.awt.Color.darkGray);
+        panel_Clientes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        panel_Clientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panel_Admin_Clientes.setBackground(new java.awt.Color(51, 51, 51));
+
+        bt_AgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
+        bt_AgregarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        bt_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_AgregarClienteMouseClicked(evt);
+            }
+        });
+
+        lab_AgregarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lab_AgregarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarCliente.setText("Agregar un nuevo Cliente Consentido");
+        lab_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lab_AgregarClienteMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout bt_AgregarClienteLayout = new javax.swing.GroupLayout(bt_AgregarCliente);
+        bt_AgregarCliente.setLayout(bt_AgregarClienteLayout);
+        bt_AgregarClienteLayout.setHorizontalGroup(
+            bt_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_AgregarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        bt_AgregarClienteLayout.setVerticalGroup(
+            bt_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_AgregarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        bt_ModificarCliente.setBackground(new java.awt.Color(51, 51, 51));
+        bt_ModificarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        bt_ModificarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_ModificarClienteMouseClicked(evt);
+            }
+        });
+
+        lab_ModificarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lab_ModificarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        lab_ModificarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_ModificarCliente.setText("Modifcar la información de un Cliente Consentido");
+        lab_ModificarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lab_ModificarClienteMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout bt_ModificarClienteLayout = new javax.swing.GroupLayout(bt_ModificarCliente);
+        bt_ModificarCliente.setLayout(bt_ModificarClienteLayout);
+        bt_ModificarClienteLayout.setHorizontalGroup(
+            bt_ModificarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_ModificarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        bt_ModificarClienteLayout.setVerticalGroup(
+            bt_ModificarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_ModificarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        bt_EliminarCliente.setBackground(new java.awt.Color(51, 51, 51));
+        bt_EliminarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        bt_EliminarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_EliminarClienteMouseClicked(evt);
+            }
+        });
+
+        lab_EliminarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lab_EliminarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        lab_EliminarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_EliminarCliente.setText("Eliminar un Cliente Consentido");
+        lab_EliminarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lab_EliminarClienteMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout bt_EliminarClienteLayout = new javax.swing.GroupLayout(bt_EliminarCliente);
+        bt_EliminarCliente.setLayout(bt_EliminarClienteLayout);
+        bt_EliminarClienteLayout.setHorizontalGroup(
+            bt_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_EliminarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_EliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        bt_EliminarClienteLayout.setVerticalGroup(
+            bt_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bt_EliminarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_EliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_Admin_ClientesLayout = new javax.swing.GroupLayout(panel_Admin_Clientes);
+        panel_Admin_Clientes.setLayout(panel_Admin_ClientesLayout);
+        panel_Admin_ClientesLayout.setHorizontalGroup(
+            panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_Admin_ClientesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bt_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_EliminarCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        panel_Admin_ClientesLayout.setVerticalGroup(
+            panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_Admin_ClientesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bt_AgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bt_ModificarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bt_EliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(51, Short.MAX_VALUE))
+        );
+
+        panel_Clientes.add(panel_Admin_Clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, -1, 500));
+
+        panel_AgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
+        panel_AgregarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        panel_AgregarCliente.setPreferredSize(new java.awt.Dimension(570, 447));
+        panel_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                panel_AgregarClienteMouseEntered(evt);
+            }
+        });
+
+        lab_NombreAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_NombreAC.setText("Nombre");
+
+        lab_TelefonoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_TelefonoAC.setText("Telefono");
+
+        lab_CorreoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_CorreoAC.setText("Correo");
+
+        lab_IDAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_IDAC.setText("ID del Cliente");
+
+        lab_CreditoAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_CreditoAC.setText("Credito Asignado");
+
+        tf_NombreAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_TelefonoAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_TelefonoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_CorreoAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_CorreoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+        tf_CorreoAC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CorreoACActionPerformed(evt);
+            }
+        });
+
+        tf_IDAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_IDAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_CreditoAC.setBackground(new java.awt.Color(51, 51, 51));
+        tf_CreditoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        pane_AgregarAC.setBackground(java.awt.Color.darkGray);
+        pane_AgregarAC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pane_AgregarACMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pane_AgregarACMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pane_AgregarACMouseExited(evt);
+            }
+        });
+
+        lab_AgregarAC.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lab_AgregarAC.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarAC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarAC.setText("Agregar");
+
+        javax.swing.GroupLayout pane_AgregarACLayout = new javax.swing.GroupLayout(pane_AgregarAC);
+        pane_AgregarAC.setLayout(pane_AgregarACLayout);
+        pane_AgregarACLayout.setHorizontalGroup(
+            pane_AgregarACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarACLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pane_AgregarACLayout.setVerticalGroup(
+            pane_AgregarACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarACLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_AgregarClienteLayout = new javax.swing.GroupLayout(panel_AgregarCliente);
+        panel_AgregarCliente.setLayout(panel_AgregarClienteLayout);
+        panel_AgregarClienteLayout.setHorizontalGroup(
+            panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
+                .addContainerGap(87, Short.MAX_VALUE)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lab_NombreAC)
+                    .addComponent(lab_IDAC)
+                    .addComponent(lab_CorreoAC)
+                    .addComponent(lab_TelefonoAC)
+                    .addComponent(lab_CreditoAC))
+                .addGap(35, 35, 35)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
+                        .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tf_CreditoAC)
+                                .addComponent(tf_IDAC)
+                                .addComponent(tf_CorreoAC))
+                            .addComponent(tf_TelefonoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(120, 120, 120))
+                    .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
+                        .addComponent(tf_NombreAC, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
+            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
+                .addGap(178, 178, 178)
+                .addComponent(pane_AgregarAC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        panel_AgregarClienteLayout.setVerticalGroup(
+            panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_NombreAC, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_NombreAC))
+                .addGap(18, 18, 18)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lab_TelefonoAC)
+                    .addComponent(tf_TelefonoAC, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_CorreoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_CorreoAC))
+                .addGap(18, 18, 18)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_IDAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_IDAC))
+                .addGap(18, 18, 18)
+                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_CreditoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab_CreditoAC))
+                .addGap(65, 65, 65)
+                .addComponent(pane_AgregarAC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        panel_Clientes.add(panel_AgregarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 11, -1, 390));
+
+        panel_ModificarClienteConsentido.setBackground(new java.awt.Color(51, 51, 51));
+        panel_ModificarClienteConsentido.setPreferredSize(new java.awt.Dimension(570, 447));
+
+        jPanel5.setBackground(java.awt.Color.darkGray);
+
+        jTextField6.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField6.setForeground(new java.awt.Color(255, 255, 255));
+
+        jPanel6.setBackground(java.awt.Color.darkGray);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lupa.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 1, Short.MAX_VALUE))
+                    .addComponent(jTextField6))
+                .addContainerGap())
+        );
+
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Nombre");
+
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Correo");
+
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Telefono");
+
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("Credito Disponible");
+
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("ID");
+
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Deuda");
+
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Saldo Disponible");
+
+        tf_NombreAC1.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC2.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC3.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC4.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC5.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC6.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC7.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        pane_AgregarAC1.setBackground(java.awt.Color.darkGray);
+        pane_AgregarAC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC1MouseExited(evt);
+            }
+        });
+
+        lab_AgregarAC1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lab_AgregarAC1.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarAC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarAC1.setText("Guardar Cambios");
+
+        javax.swing.GroupLayout pane_AgregarAC1Layout = new javax.swing.GroupLayout(pane_AgregarAC1);
+        pane_AgregarAC1.setLayout(pane_AgregarAC1Layout);
+        pane_AgregarAC1Layout.setHorizontalGroup(
+            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pane_AgregarAC1Layout.setVerticalGroup(
+            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_ModificarClienteConsentidoLayout = new javax.swing.GroupLayout(panel_ModificarClienteConsentido);
+        panel_ModificarClienteConsentido.setLayout(panel_ModificarClienteConsentidoLayout);
+        panel_ModificarClienteConsentidoLayout.setHorizontalGroup(
+            panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel14)
+                            .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel13)
+                                .addComponent(jLabel15))
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18))
+                        .addGap(41, 41, 41)
+                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                .addGap(176, 176, 176)
+                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_ModificarClienteConsentidoLayout.setVerticalGroup(
+            panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+
+        panel_Clientes.add(panel_ModificarClienteConsentido, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, -1, -1));
+
+        panel_EliminarCliente.setBackground(new java.awt.Color(51, 51, 51));
+        panel_EliminarCliente.setPreferredSize(new java.awt.Dimension(570, 447));
+
+        jPanel7.setBackground(java.awt.Color.darkGray);
+
+        jTextField7.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField7.setForeground(new java.awt.Color(255, 255, 255));
+
+        jPanel8.setBackground(java.awt.Color.darkGray);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lupa.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 1, Short.MAX_VALUE))
+                    .addComponent(jTextField7))
+                .addContainerGap())
+        );
+
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Nombre");
+
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Correo");
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Telefono");
+
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("Credito Disponible");
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("ID");
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Deuda");
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Saldo Disponible");
+
+        tf_NombreAC8.setEditable(false);
+        tf_NombreAC8.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC9.setEditable(false);
+        tf_NombreAC9.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC10.setEditable(false);
+        tf_NombreAC10.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC11.setEditable(false);
+        tf_NombreAC11.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC12.setEditable(false);
+        tf_NombreAC12.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC13.setEditable(false);
+        tf_NombreAC13.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        tf_NombreAC14.setEditable(false);
+        tf_NombreAC14.setBackground(new java.awt.Color(51, 51, 51));
+        tf_NombreAC14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
+
+        pane_AgregarAC2.setBackground(java.awt.Color.darkGray);
+        pane_AgregarAC2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pane_AgregarAC2MouseExited(evt);
+            }
+        });
+
+        lab_AgregarAC2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lab_AgregarAC2.setForeground(new java.awt.Color(255, 255, 255));
+        lab_AgregarAC2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_AgregarAC2.setText("Eliminar Cliente Consentido");
+
+        javax.swing.GroupLayout pane_AgregarAC2Layout = new javax.swing.GroupLayout(pane_AgregarAC2);
+        pane_AgregarAC2.setLayout(pane_AgregarAC2Layout);
+        pane_AgregarAC2Layout.setHorizontalGroup(
+            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pane_AgregarAC2Layout.setVerticalGroup(
+            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel_EliminarClienteLayout = new javax.swing.GroupLayout(panel_EliminarCliente);
+        panel_EliminarCliente.setLayout(panel_EliminarClienteLayout);
+        panel_EliminarClienteLayout.setHorizontalGroup(
+            panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel24)
+                            .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel22)
+                                .addComponent(jLabel21)
+                                .addComponent(jLabel20))
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel26))
+                        .addGap(59, 59, 59)
+                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_EliminarClienteLayout.setVerticalGroup(
+            panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        panel_Clientes.add(panel_EliminarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 15, -1, 490));
+
+        panel_Admin.add(panel_Clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 48, -1, -1));
+
         panel_Activida.setBackground(java.awt.Color.darkGray);
         panel_Activida.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
 
@@ -1186,701 +1882,6 @@ public class Home extends javax.swing.JFrame {
 
         panel_Admin.add(bt_VolverPanelVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
-        panel_Clientes.setBackground(java.awt.Color.darkGray);
-        panel_Clientes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        panel_Clientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        panel_Admin_Clientes.setBackground(new java.awt.Color(51, 51, 51));
-
-        bt_AgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
-        bt_AgregarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        bt_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bt_AgregarClienteMouseClicked(evt);
-            }
-        });
-
-        lab_AgregarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lab_AgregarCliente.setForeground(new java.awt.Color(255, 255, 255));
-        lab_AgregarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_AgregarCliente.setText("Agregar un nuevo Cliente Consentido");
-        lab_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lab_AgregarClienteMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bt_AgregarClienteLayout = new javax.swing.GroupLayout(bt_AgregarCliente);
-        bt_AgregarCliente.setLayout(bt_AgregarClienteLayout);
-        bt_AgregarClienteLayout.setHorizontalGroup(
-            bt_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_AgregarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        bt_AgregarClienteLayout.setVerticalGroup(
-            bt_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_AgregarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        bt_ModificarCliente.setBackground(new java.awt.Color(51, 51, 51));
-        bt_ModificarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        bt_ModificarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bt_ModificarClienteMouseClicked(evt);
-            }
-        });
-
-        lab_ModificarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lab_ModificarCliente.setForeground(new java.awt.Color(255, 255, 255));
-        lab_ModificarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_ModificarCliente.setText("Modifcar la información de un Cliente Consentido");
-        lab_ModificarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lab_ModificarClienteMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bt_ModificarClienteLayout = new javax.swing.GroupLayout(bt_ModificarCliente);
-        bt_ModificarCliente.setLayout(bt_ModificarClienteLayout);
-        bt_ModificarClienteLayout.setHorizontalGroup(
-            bt_ModificarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_ModificarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        bt_ModificarClienteLayout.setVerticalGroup(
-            bt_ModificarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_ModificarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        bt_EliminarCliente.setBackground(new java.awt.Color(51, 51, 51));
-        bt_EliminarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        bt_EliminarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                bt_EliminarClienteMouseClicked(evt);
-            }
-        });
-
-        lab_EliminarCliente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lab_EliminarCliente.setForeground(new java.awt.Color(255, 255, 255));
-        lab_EliminarCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_EliminarCliente.setText("Eliminar un Cliente Consentido");
-        lab_EliminarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lab_EliminarClienteMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bt_EliminarClienteLayout = new javax.swing.GroupLayout(bt_EliminarCliente);
-        bt_EliminarCliente.setLayout(bt_EliminarClienteLayout);
-        bt_EliminarClienteLayout.setHorizontalGroup(
-            bt_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_EliminarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_EliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        bt_EliminarClienteLayout.setVerticalGroup(
-            bt_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bt_EliminarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_EliminarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout panel_Admin_ClientesLayout = new javax.swing.GroupLayout(panel_Admin_Clientes);
-        panel_Admin_Clientes.setLayout(panel_Admin_ClientesLayout);
-        panel_Admin_ClientesLayout.setHorizontalGroup(
-            panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_Admin_ClientesLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bt_ModificarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bt_AgregarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bt_EliminarCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        panel_Admin_ClientesLayout.setVerticalGroup(
-            panel_Admin_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_Admin_ClientesLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bt_AgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bt_ModificarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bt_EliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
-
-        panel_Clientes.add(panel_Admin_Clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, -1, 500));
-
-        panel_ModificarClienteConsentido.setBackground(new java.awt.Color(51, 51, 51));
-        panel_ModificarClienteConsentido.setPreferredSize(new java.awt.Dimension(570, 447));
-
-        jPanel5.setBackground(java.awt.Color.darkGray);
-
-        jTextField6.setBackground(new java.awt.Color(51, 51, 51));
-        jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-
-        jPanel6.setBackground(java.awt.Color.darkGray);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lupa.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel11)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel11)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 1, Short.MAX_VALUE))
-                    .addComponent(jTextField6))
-                .addContainerGap())
-        );
-
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Nombre");
-
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Correo");
-
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("Telefono");
-
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("Credito Disponible");
-
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("ID");
-
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("Deuda");
-
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("Saldo Disponible");
-
-        tf_NombreAC1.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC2.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC3.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC4.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC5.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC6.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC7.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        pane_AgregarAC1.setBackground(java.awt.Color.darkGray);
-        pane_AgregarAC1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC1MouseExited(evt);
-            }
-        });
-
-        lab_AgregarAC1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lab_AgregarAC1.setForeground(new java.awt.Color(255, 255, 255));
-        lab_AgregarAC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_AgregarAC1.setText("Guardar Cambios");
-
-        javax.swing.GroupLayout pane_AgregarAC1Layout = new javax.swing.GroupLayout(pane_AgregarAC1);
-        pane_AgregarAC1.setLayout(pane_AgregarAC1Layout);
-        pane_AgregarAC1Layout.setHorizontalGroup(
-            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        pane_AgregarAC1Layout.setVerticalGroup(
-            pane_AgregarAC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarAC1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout panel_ModificarClienteConsentidoLayout = new javax.swing.GroupLayout(panel_ModificarClienteConsentido);
-        panel_ModificarClienteConsentido.setLayout(panel_ModificarClienteConsentidoLayout);
-        panel_ModificarClienteConsentidoLayout.setHorizontalGroup(
-            panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel14)
-                            .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel15))
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel18))
-                        .addGap(41, 41, 41)
-                        .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                .addGap(176, 176, 176)
-                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panel_ModificarClienteConsentidoLayout.setVerticalGroup(
-            panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_ModificarClienteConsentidoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(tf_NombreAC1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(tf_NombreAC2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(tf_NombreAC3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(tf_NombreAC4, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(tf_NombreAC5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(tf_NombreAC6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_ModificarClienteConsentidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(tf_NombreAC7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addComponent(pane_AgregarAC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
-        );
-
-        panel_Clientes.add(panel_ModificarClienteConsentido, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, -1, -1));
-
-        panel_AgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
-        panel_AgregarCliente.setForeground(new java.awt.Color(255, 255, 255));
-        panel_AgregarCliente.setPreferredSize(new java.awt.Dimension(570, 447));
-        panel_AgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                panel_AgregarClienteMouseEntered(evt);
-            }
-        });
-
-        lab_NombreAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_NombreAC.setText("Nombre");
-
-        lab_TelefonoAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_TelefonoAC.setText("Telefono");
-
-        lab_CorreoAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_CorreoAC.setText("Correo");
-
-        lab_IDAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_IDAC.setText("ID del Cliente");
-
-        lab_CreditoAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_CreditoAC.setText("Credito Asignado");
-
-        tf_NombreAC.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_TelefonoAC.setBackground(new java.awt.Color(51, 51, 51));
-        tf_TelefonoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_CorreoAC.setBackground(new java.awt.Color(51, 51, 51));
-        tf_CorreoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-        tf_CorreoAC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_CorreoACActionPerformed(evt);
-            }
-        });
-
-        tf_IDAC.setBackground(new java.awt.Color(51, 51, 51));
-        tf_IDAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_CreditoAC.setBackground(new java.awt.Color(51, 51, 51));
-        tf_CreditoAC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        pane_AgregarAC.setBackground(java.awt.Color.darkGray);
-        pane_AgregarAC.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pane_AgregarACMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pane_AgregarACMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pane_AgregarACMouseExited(evt);
-            }
-        });
-
-        lab_AgregarAC.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lab_AgregarAC.setForeground(new java.awt.Color(255, 255, 255));
-        lab_AgregarAC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_AgregarAC.setText("Agregar");
-
-        javax.swing.GroupLayout pane_AgregarACLayout = new javax.swing.GroupLayout(pane_AgregarAC);
-        pane_AgregarAC.setLayout(pane_AgregarACLayout);
-        pane_AgregarACLayout.setHorizontalGroup(
-            pane_AgregarACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarACLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        pane_AgregarACLayout.setVerticalGroup(
-            pane_AgregarACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarACLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout panel_AgregarClienteLayout = new javax.swing.GroupLayout(panel_AgregarCliente);
-        panel_AgregarCliente.setLayout(panel_AgregarClienteLayout);
-        panel_AgregarClienteLayout.setHorizontalGroup(
-            panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lab_NombreAC)
-                    .addComponent(lab_IDAC)
-                    .addComponent(lab_CorreoAC)
-                    .addComponent(lab_TelefonoAC)
-                    .addComponent(lab_CreditoAC))
-                .addGap(35, 35, 35)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
-                        .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(tf_CreditoAC)
-                                .addComponent(tf_IDAC)
-                                .addComponent(tf_CorreoAC))
-                            .addComponent(tf_TelefonoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(120, 120, 120))
-                    .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
-                        .addComponent(tf_NombreAC, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
-                .addGap(178, 178, 178)
-                .addComponent(pane_AgregarAC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        panel_AgregarClienteLayout.setVerticalGroup(
-            panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_AgregarClienteLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_NombreAC, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_NombreAC))
-                .addGap(18, 18, 18)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lab_TelefonoAC)
-                    .addComponent(tf_TelefonoAC, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_CorreoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_CorreoAC))
-                .addGap(18, 18, 18)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_IDAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_IDAC))
-                .addGap(18, 18, 18)
-                .addGroup(panel_AgregarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_CreditoAC, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lab_CreditoAC))
-                .addGap(65, 65, 65)
-                .addComponent(pane_AgregarAC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
-        );
-
-        panel_Clientes.add(panel_AgregarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 11, -1, 390));
-
-        panel_EliminarCliente.setBackground(new java.awt.Color(51, 51, 51));
-        panel_EliminarCliente.setPreferredSize(new java.awt.Dimension(570, 447));
-
-        jPanel7.setBackground(java.awt.Color.darkGray);
-
-        jTextField7.setBackground(new java.awt.Color(51, 51, 51));
-        jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-
-        jPanel8.setBackground(java.awt.Color.darkGray);
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lupa.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 1, Short.MAX_VALUE))
-                    .addComponent(jTextField7))
-                .addContainerGap())
-        );
-
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("Nombre");
-
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("Correo");
-
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Telefono");
-
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Credito Disponible");
-
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("ID");
-
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("Deuda");
-
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setText("Saldo Disponible");
-
-        tf_NombreAC8.setEditable(false);
-        tf_NombreAC8.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC9.setEditable(false);
-        tf_NombreAC9.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC10.setEditable(false);
-        tf_NombreAC10.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC11.setEditable(false);
-        tf_NombreAC11.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC12.setEditable(false);
-        tf_NombreAC12.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC13.setEditable(false);
-        tf_NombreAC13.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        tf_NombreAC14.setEditable(false);
-        tf_NombreAC14.setBackground(new java.awt.Color(51, 51, 51));
-        tf_NombreAC14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 154, 204)));
-
-        pane_AgregarAC2.setBackground(java.awt.Color.darkGray);
-        pane_AgregarAC2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC2MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pane_AgregarAC2MouseExited(evt);
-            }
-        });
-
-        lab_AgregarAC2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lab_AgregarAC2.setForeground(new java.awt.Color(255, 255, 255));
-        lab_AgregarAC2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_AgregarAC2.setText("Eliminar Cliente Consentido");
-
-        javax.swing.GroupLayout pane_AgregarAC2Layout = new javax.swing.GroupLayout(pane_AgregarAC2);
-        pane_AgregarAC2.setLayout(pane_AgregarAC2Layout);
-        pane_AgregarAC2Layout.setHorizontalGroup(
-            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        pane_AgregarAC2Layout.setVerticalGroup(
-            pane_AgregarAC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pane_AgregarAC2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lab_AgregarAC2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout panel_EliminarClienteLayout = new javax.swing.GroupLayout(panel_EliminarCliente);
-        panel_EliminarCliente.setLayout(panel_EliminarClienteLayout);
-        panel_EliminarClienteLayout.setHorizontalGroup(
-            panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel24)
-                            .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel22)
-                                .addComponent(jLabel21)
-                                .addComponent(jLabel20))
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel26))
-                        .addGap(59, 59, 59)
-                        .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                .addGap(170, 170, 170)
-                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panel_EliminarClienteLayout.setVerticalGroup(
-            panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_EliminarClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(tf_NombreAC8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22)
-                    .addComponent(tf_NombreAC9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21)
-                    .addComponent(tf_NombreAC11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(tf_NombreAC10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(tf_NombreAC12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(tf_NombreAC13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_EliminarClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(tf_NombreAC14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(pane_AgregarAC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-
-        panel_Clientes.add(panel_EliminarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 15, -1, 490));
-
-        panel_Admin.add(panel_Clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 48, -1, -1));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -2001,6 +2002,9 @@ public class Home extends javax.swing.JFrame {
     private void icon_ProductosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_ProductosMouseClicked
         // TODO add your handling code here:
         bt_Productos.setBackground(Color.decode("#0099CC"));
+        bt_Corte.setBackground(Color.decode("#333333"));
+        bt_Clientes.setBackground(Color.decode("#333333"));
+        panel_Admin_ProductosOpcion.setVisible(true);
     }//GEN-LAST:event_icon_ProductosMouseClicked
 
     private void icon_ClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icon_ClientesMouseClicked
@@ -2067,6 +2071,10 @@ public class Home extends javax.swing.JFrame {
 
     private void bt_ClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ClientesMouseClicked
         // TODO add your handling code here:
+        bt_Clientes.setBackground(Color.decode("#0099CC"));
+        bt_Productos.setBackground(Color.decode("#333333"));
+        bt_Corte.setBackground(Color.decode("#333333"));
+        panel_Admin_ProductosOpcion.setVisible(false);
         panel_Clientes.setVisible(true);
         panel_Activida.setVisible(false);
     }//GEN-LAST:event_bt_ClientesMouseClicked
